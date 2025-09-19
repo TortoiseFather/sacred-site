@@ -1,7 +1,12 @@
 // src/components/SvgHotspots.tsx
-import { useEffect, useState } from 'react'
+import { useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { steps } from '../data/steps'
+
+// raw text for parsing viewBox
+import sacredSvgRaw from '@/assets/sacred.svg'
+// url for rendering in <image>/<img>
+import sacredSvgUrl from '@/assets/sacred.svg'
 
 type VB = { minX: number; minY: number; width: number; height: number }
 
@@ -41,9 +46,8 @@ const SECONDARY: Secondary[] = [
     content: 'Check the ODM against evidence; if gaps remain, iterate prior steps before proceeding.' },
 ]
 
-// read viewBox from sacred.svg
-async function getViewBox(): Promise<VB | null> {
-  const txt = await fetch('/sacred.svg').then(r => r.text())
+// parse viewBox from the raw svg text
+function parseViewBoxFromRaw(txt: string): VB | null {
   const m = txt.match(/viewBox\s*=\s*"([\d.-]+)\s+([\d.-]+)\s+([\d.-]+)\s+([\d.-]+)"/i)
   if (!m) return null
   const [, minX, minY, width, height] = m
@@ -56,11 +60,18 @@ export default function SvgHotspots({
   onSecondarySelect?: (s: Secondary | null) => void
 }) {
   const nav = useNavigate()
-  const [vb, setVb] = useState<VB | null>(null)
 
-  useEffect(() => { getViewBox().then(setVb).catch(() => setVb(null)) }, [])
+  // compute once; no network, works in dev + prod
+  const vb = useMemo(() => parseViewBoxFromRaw(sacredSvgRaw), [])
 
-  if (!vb) return <div className="diagram-wrap"><img src="/sacred.svg" alt="SACRED overview" /></div>
+  if (!vb) {
+    // Fallback: still render the non-interactive image if parsing ever fails
+    return (
+      <div className="diagram-wrap">
+        <img src={sacredSvgUrl} alt="SACRED overview" />
+      </div>
+    )
+  }
 
   return (
     <div className="diagram-wrap">
@@ -74,7 +85,7 @@ export default function SvgHotspots({
       >
         {/* base diagram (no pointer events) */}
         <image
-          href="/sacred.svg"
+          href={sacredSvgUrl}
           x={vb.minX}
           y={vb.minY}
           width={vb.width}
@@ -83,7 +94,7 @@ export default function SvgHotspots({
           style={{ pointerEvents: 'none' }}
         />
 
-        {/* step hotspots (navigate) — square, transparent, blue outline on hover */}
+        {/* step hotspots (navigate) — square, transparent, blue outline on hover via CSS */}
         {STEP_HOTSPOTS.map(r => (
           <rect
             key={r.slug}
