@@ -1,12 +1,7 @@
-// src/components/SvgHotspots.tsx
-import { useMemo } from 'react'
+import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { steps } from '../data/steps'
-
-// raw text for parsing viewBox
-import sacredSvgRaw from '@/assets/sacred.svg'
-// url for rendering in <image>/<img>
-import sacredSvgUrl from '@/assets/sacred.svg'
+import sacredUrl from '../assets/sacred.svg'   // normal import, no ?raw
 
 type VB = { minX: number; minY: number; width: number; height: number }
 
@@ -45,9 +40,13 @@ const SECONDARY: Secondary[] = [
   { id: 'odm-verification', label: 'ODM Verification', x: 426, y: 80,  w: 88, h: 50,
     content: 'Check the ODM against evidence; if gaps remain, iterate prior steps before proceeding.' },
 ]
-
-// parse viewBox from the raw svg text
-function parseViewBoxFromRaw(txt: string): VB | null {
+async function getViewBox(): Promise<VB | null> {
+  const res = await fetch(sacredUrl)
+  if (!res.ok) {
+    console.error('Failed to fetch sacred.svg:', res.status, res.statusText)
+    return null
+  }
+  const txt = await res.text()
   const m = txt.match(/viewBox\s*=\s*"([\d.-]+)\s+([\d.-]+)\s+([\d.-]+)\s+([\d.-]+)"/i)
   if (!m) return null
   const [, minX, minY, width, height] = m
@@ -60,15 +59,14 @@ export default function SvgHotspots({
   onSecondarySelect?: (s: Secondary | null) => void
 }) {
   const nav = useNavigate()
+  const [vb, setVb] = useState<VB | null>(null)
 
-  // compute once; no network, works in dev + prod
-  const vb = useMemo(() => parseViewBoxFromRaw(sacredSvgRaw), [])
+  useEffect(() => { getViewBox().then(setVb).catch(() => setVb(null)) }, [])
 
   if (!vb) {
-    // Fallback: still render the non-interactive image if parsing ever fails
     return (
       <div className="diagram-wrap">
-        <img src={sacredSvgUrl} alt="SACRED overview" />
+        <img src={sacredUrl} alt="SACRED overview" />
       </div>
     )
   }
@@ -83,9 +81,9 @@ export default function SvgHotspots({
         aria-label="SACRED overview with interactive hotspots"
         style={{ display: 'block', width: '100%', height: 'auto' }}
       >
-        {/* base diagram (no pointer events) */}
+        {/* base diagram */}
         <image
-          href={sacredSvgUrl}
+          href={sacredUrl}
           x={vb.minX}
           y={vb.minY}
           width={vb.width}
@@ -94,7 +92,7 @@ export default function SvgHotspots({
           style={{ pointerEvents: 'none' }}
         />
 
-        {/* step hotspots (navigate) — square, transparent, blue outline on hover via CSS */}
+        {/* step hotspots */}
         {STEP_HOTSPOTS.map(r => (
           <rect
             key={r.slug}
@@ -109,7 +107,7 @@ export default function SvgHotspots({
           />
         ))}
 
-        {/* secondary hotspots (toggle info above the bio; no navigation) */}
+        {/* secondary hotspots */}
         {SECONDARY.map(s => (
           <rect
             key={s.id}
