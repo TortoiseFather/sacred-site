@@ -64,12 +64,14 @@ Please change the parent <Route path="${G}"> to <Route path="${G==="/"?"*":`${G}
 - Capture known constraints (timetables, platforms, junctions).
 - Record data gaps + assumptions.
 
-**Outputs**: a route dossier to seed Step 1.`},{number:1,title:"Step 1: Concept Assurance",slug:"1-concept-assurance",summary:"Define purpose, stakeholders, assumptions, and a first-pass ODM with MoSCoW requirements.",diagramSrc:"/diagrams/step-1.svg",implementationMd:`**Do**:
+**Outputs**: a route dossier to seed Step 1.`},{number:1,title:"Step 1: Concept Assurance",slug:"1-concept-assurance",summary:"Define purpose, stakeholders, assumptions, and a first-pass ODM with MoSCoW requirements.",subDiagramSrc:"/diagrams/step-1.svg",implementationMd:`**Do**:
 - Define MoSCoW: Must/Should/Could/Would.
 - Draft the ODM at high level (as understood by the system).
 - State the Scenario Definition and an initial SOC sketch.
 
-**Outputs**: Concept brief, MoSCoW list, v0 ODM.`},{number:2,title:"Step 2: Hazard Identification",slug:"2-hazard-identification",summary:"Map operational features and environmental risks; classify hazards by ego-vehicle vs ecosystem responsibility.",subDiagramSrc:"/diagrams/step-2.svg",subHotspots:[{id:"ego-analysis",x:163,y:288,w:86,h:43,label:"Ego Hazard Analysis",content:"Hazards owned by the ego-vehicle given onboard capabilities and duties."},{id:"eco-analysis",x:249,y:288,w:86,h:43,label:"ECO Hazard Analysis",content:"Hazards managed by signalling/ops/infrastructure; clarifies interfaces and handoffs."}],implementationMd:`**Do**:
+**Outputs**: Concept brief, MoSCoW list, v0 ODM.
+
+ A scary fourth thing.`},{number:2,title:"Step 2: Hazard Identification",slug:"2-hazard-identification",summary:"Map operational features and environmental risks; classify hazards by ego-vehicle vs ecosystem responsibility.",subDiagramSrc:"/diagrams/step-2.svg",subHotspots:[{id:"ego-analysis",x:163,y:288,w:86,h:43,label:"Ego Hazard Analysis",content:"Hazards owned by the ego-vehicle given onboard capabilities and duties."},{id:"eco-analysis",x:249,y:288,w:86,h:43,label:"ECO Hazard Analysis",content:"Hazards managed by signalling/ops/infrastructure; clarifies interfaces and handoffs."}],implementationMd:`**Do**:
 - Map mandatory operations (signals, junctions, limits).
 - Identify environmental interfaces (overpasses, fencing, trespass vectors).
 - Build fault trees (e.g., SPAD: seen/misread/disregarded/system error).
