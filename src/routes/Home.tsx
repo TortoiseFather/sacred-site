@@ -20,7 +20,9 @@ export default function Home() {
             <div className="info-panel card" role="region" aria-live="polite">
               <div className="badge">Detail</div>
               <h3>{secondary.label}</h3>
-              <p>{secondary.content}</p>
+              <p style={{ whiteSpace: 'pre-line' }}>
+  {secondary.content}
+</p>
             </div>
           )}
           <article className="bio">

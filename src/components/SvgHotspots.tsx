@@ -46,15 +46,13 @@ const SECONDARY: Secondary[] = [
   label: 'Legend',
   x: 600, y: 10, w: 199, h: 60,
   content: `Welcome to the Safe Autonomy of Complex Railway Environments within a Digital space (SACRED).
-This website is a walkthrough of the methodology. The graphic above shows the entire process:
-clicking a *step* takes you to its page; clicking key terms here reveals short definitions
-(use the step pages for longer definitions).
+This website is a walkthrough of the methodology. The graphic above shows the entire process.
+Clicking a step takes you to its page; clicking key terms here reveals short definitions (use the step pages for longer definitions).
 
-SACRED has seven steps grouped into three objectives. Items shown in red (Concept, ODM, Scenario Definition)
-are *given* inputs for the walkthrough. Objective 1 (green) scopes the complex environment; Objective 2 (teal)
-validates the ODM against historical evidence; Objective 3 (yellow) verifies the ODM using state-of-the-art
-technology. We show Simulation Mapping as the simplest verification route, but any SoTA representation that
-supports a SOC is acceptable.
+SACRED has seven steps grouped into three objectives. Items shown in red (Concept, ODM, Scenario Definition) are given inputs for the walkthrough.
+Objective 1 (green) scopes the complex environment;
+Objective 2 (teal) validates the ODM against historical evidence;
+Objective 3 (yellow) verifies the ODM using state-of-the-art technology. We show Simulation Mapping as the simplest verification route, but any SoTA representation that supports a SOC is acceptable.
 
 Shapes: squares = steps, circles = single documents, parallelograms = questions/decisions.`
 },
@@ -62,9 +60,8 @@ Shapes: squares = steps, circles = single documents, parallelograms = questions/
   id: 'id-of-components',
   label: 'Component Identification',
   x: 188, y: 350, w: 116, h: 40,
-  content: `A decision point: can we fully represent the concept, compartmentalise hazards,
-and understand the route? If yes, proceed to Step 3. Otherwise the route is not fit for this
-scenario and the concept must be narrowed.`
+  content: `A decision point: can we fully represent the concept, compartmentalise hazards, and understand the route? 
+  If yes, proceed to Step 3. Otherwise the route is not fit for this scenario and the concept must be narrowed.`
 },
   ]
 async function getViewBox(): Promise<VB | null> {
