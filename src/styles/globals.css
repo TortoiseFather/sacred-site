@@ -134,3 +134,88 @@ footer { border-top:1px solid #e5e7eb; padding:16px 0; margin-top:32px; color:va
   opacity: 1;
   margin-top: 4px;
 }
+.step-nav .nav-header {
+  font-weight: 700;
+  color: #374151;
+  padding: 8px 12px;
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 4px;
+}
+
+.step-nav .nav-item {
+  margin: 4px 0;
+  border-radius: 10px;
+}
+
+.step-nav .nav-item.active .nav-step {
+  background: #eaf0ff;
+  border-color: #c7d2fe;
+}
+
+.step-nav .nav-step {
+  width: 100%;
+  text-align: left;
+  padding: 10px 12px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.step-nav .nav-step-title {
+  font-weight: 600;
+}
+
+.step-nav .nav-open-link {
+  padding: 6px 12px 0 12px;
+}
+
+.step-nav .nav-open-link a {
+  font-size: 12px;
+  color: #2563eb;
+}
+
+.step-nav .nav-groups {
+  margin: 6px 0 12px 0;
+  padding: 0 4px 0 8px;
+}
+
+.step-nav .nav-group + .nav-group { margin-top: 6px; }
+
+.step-nav .group-toggle {
+  width: 100%;
+  text-align: left;
+  padding: 6px 8px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.step-nav .group-list {
+  list-style: none;
+  padding-left: 8px;
+  margin: 6px 0 0 0;
+}
+
+.step-nav .group-list li { margin: 4px 0; }
+
+.step-nav .ref-link {
+  display: inline-block;
+  font-size: 13px;
+  color: #1f2937;
+  background: transparent;
+  border: none;
+  padding: 4px 2px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.step-nav .ref-link:hover { color: #2563eb; }
+
+.step-nav .chev { opacity: 0.6; }

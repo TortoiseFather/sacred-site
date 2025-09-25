@@ -15,7 +15,7 @@ return (
 {children}
 </main>
 <footer>
-<div className="container">© {new Date().getFullYear()} The SACRED Methodology, 'The Cafe' Research and Development. All rights reserved, LeBlancs Cafe 2020-2025.</div>
+<div className="container">© {new Date().getFullYear()} All rights reserved, 'The Cafe' 2020-2025.</div>
 </footer>
 </div>
 )

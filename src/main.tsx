@@ -5,15 +5,17 @@ import './styles/globals.css'
 import Home from './routes/Home'
 import StepPage from './routes/StepPage'
 import StepExample from './routes/StepExample'   // <-- make sure this import exists
-
+import RefProvider from './components/RefProvider'
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <HashRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/steps/:slug" element={<StepPage />} />
-        <Route path="/steps/:stepSlug/examples/:exampleId" element={<StepExample />} /> {/* <-- NEW */}
-      </Routes>
+      <RefProvider>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/steps/:slug" element={<StepPage />} />
+          <Route path="/steps/:stepSlug/examples/:exampleId" element={<StepExample />} />
+        </Routes>
+      </RefProvider>
     </HashRouter>
   </StrictMode>
 )

@@ -2,8 +2,6 @@ import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { steps } from '../data/steps'
 import sacredUrl from '../assets/sacred.svg'   // normal import, no ?raw
-import { assetUrl } from '../lib/assetUrl'
-const sacredSrc = assetUrl('sacred.svg')
 
 type VB = { minX: number; minY: number; width: number; height: number }
 
