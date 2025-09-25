@@ -7,7 +7,9 @@ export type SubHotspot = {
   x: number; y: number; w: number; h: number
   rx?: number
   label?: string
-  content: string
+  kind?: 'info' | 'link'   // <-- add
+  content?: string         // used when kind:'info'
+  navigateTo?: string      // used when kind:'link'
 }
 
 async function readViewBox(src: string): Promise<VB | null> {
@@ -50,20 +52,37 @@ export default function SubDiagram({
           preserveAspectRatio="xMidYMid meet"
           style={{ pointerEvents: 'none' }}
         />
-        {hotspots.map(h => (
-          <rect
-            key={h.id}
-            className="hotspot"
-            x={h.x} y={h.y} width={h.w} height={h.h}
-            rx={h.rx ?? 0}
-            fill="transparent" stroke="transparent" strokeWidth={2}
-            vectorEffect="non-scaling-stroke"
-            onClick={() => onSelect(h)}
-            tabIndex={0}
-            onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && onSelect(h)}
-            aria-label={h.label ?? 'Show details'}
-          />
-        ))}
+        {hotspots.map(h => {
+          const rectEl = (
+            <rect
+              key={h.id}
+              className="hotspot"
+              x={h.x} y={h.y} width={h.w} height={h.h}
+              rx={h.rx ?? 0}
+              fill="transparent" stroke="transparent" strokeWidth={2}
+              vectorEffect="non-scaling-stroke"
+              // keep onClick only for info hotspots
+              onClick={h.kind === 'info' ? () => onSelect(h) : undefined}
+              tabIndex={0}
+              onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && h.kind === 'info' ? onSelect(h) : undefined}
+              aria-label={h.label ?? 'Show details'}
+              style={{ cursor: 'pointer' }}
+            />
+          )
+
+          if (h.kind === 'link' && h.navigateTo) {
+            // IMPORTANT: HashRouter wants a hash link; ensure we get "#/steps/…"
+            const clean = h.navigateTo.replace(/^#?\/?/, '')      // strip leading # or /
+            const href = `#/${clean}`                             // make "#/steps/…"
+            return (
+              <a key={h.id} href={href}>
+                {rectEl}
+              </a>
+            )
+          }
+
+          return rectEl
+        })}
       </svg>
     </div>
   )

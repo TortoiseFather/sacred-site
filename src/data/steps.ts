@@ -1,3 +1,6 @@
+export const __STEPS_MODULE_URL__ = import.meta.url;
+console.log('[steps.ts] loaded from:', import.meta.url);
+import type { SubHotspot } from '../components/SubDiagram'
 export type Step = {
   number: number
   title: string
@@ -6,15 +9,10 @@ export type Step = {
   diagramSrc?: string         // (used on home if you want)
   subDiagramSrc?: string      // shown at top of step page
   implementationMd: string
-  subHotspots?: Array<{
-    id: string
-    x: number; y: number; w: number; h: number
-    rx?: number
-    label?: string
-    content: string
-  }>
+  subHotspots?: SubHotspot[]   // <-- use the exported type here
   next?: { slug: string; number: number; title: string }
 }
+
 export const steps: Step[] = [
 {
 number: 0,
@@ -25,13 +23,75 @@ diagramSrc: 'diagrams/step-0.svg',
 implementationMd: `**Inputs**: route name, public docs, stakeholder list.\n\n**Do**:\n- Collate signal maps and service patterns.\n- Capture known constraints (timetables, platforms, junctions).\n- Record data gaps + assumptions.\n\n**Outputs**: a route dossier to seed Step 1.`,
 },
 {
-number: 1,
-title: 'Step 1: Concept Assurance',
-slug: '1-concept-assurance',
-summary: 'Define purpose, stakeholders, assumptions, and a first-pass ODM with MoSCoW requirements.',
-subDiagramSrc: 'diagrams/step-1.svg',
-implementationMd: `**Do**:\n- Define MoSCoW: Must/Should/Could/Would.\n- Draft the ODM at high level (as understood by the system).\n- State the Scenario Definition and an initial SOC sketch.\n\n**Outputs**: Concept brief, MoSCoW list, v0 ODM.\n\n A secret fourth thing.`,
+  number: 1,
+  title: 'Concept Assurance',
+  slug: '1-concept-assurance',
+  summary: 'Define purpose, stakeholders, assumptions, and a first-pass ODM with MoSCoW requirements.',
+  subDiagramSrc: 'diagrams/step-1.svg',
+  subHotspots: [
+    // Inputs/deliverables (parallelograms) → link to example pages
+    { id: 'd0', label: 'Deliverable D0', kind: 'link', navigateTo: '/steps/1-concept-assurance/examples/d0', x: 1,   y: 181, w: 161, h: 90 },
+    { id: 'd2', label: 'Deliverable D2', kind: 'link', navigateTo: '/steps/1-concept-assurance/examples/d2', x: 465, y: 279, w: 120, h: 59 },
+    { id: 'd1', label: 'Deliverable D1', kind: 'link', navigateTo: '/steps/1-concept-assurance/examples/d1', x: 900, y: 200, w: 120, h: 59 },
+    { id: 'a',  label: 'Artefact A',     kind: 'link', navigateTo: '/steps/1-concept-assurance/examples/a',  x: 476, y: 1,   w: 96,  h: 59 },
+    { id: 'b',  label: 'Artefact B',     kind: 'link', navigateTo: '/steps/1-concept-assurance/examples/b',  x: 580, y: 1,   w: 96,  h: 59 },
+    { id: 'c',  label: 'Artefact C',     kind: 'link', navigateTo: '/steps/1-concept-assurance/examples/c',  x: 690, y: 1,   w: 96,  h: 59 },
+    { id: 'd',  label: 'Artefact D',     kind: 'link', navigateTo: '/steps/1-concept-assurance/examples/d',  x: 793, y: 1,   w: 96,  h: 59 },
+
+    // Sub-steps (rectangles) → inline detailed info (markdown, with cross-links)
+    {
+      id: '1-1', label: '1.1 SotA comparison', kind: 'info', x: 229, y: 200, w: 111, h: 59,
+      content: `**Goal.** Explore current *state of the art* to assess whether the concept in [D0](#/steps/1-concept-assurance/examples/d0) is feasible and to surface gaps/assumptions.
+
+**Activities**
+- Survey comparable rail automation deployments (operator reports, standards, academic/industry case studies).
+- Distil capabilities and constraints relevant to your route (communication coverage, signalling, platform geometry, adhesion limits, sensing limits).
+- Record findings as **Artefact [A] SotA** (see [A](#/steps/1-concept-assurance/examples/a)).
+
+**Why it matters**
+- Even if [A] is initially provided, 1.1 validates and contextualises it for your operation and feeds **Step 6 (AS Design Assurance)**.
+
+**Example (E1).** Driverless operation on Paris Métro Line 1 demonstrates feasibility of GoA-4 in certain contexts. This does **not** directly transfer to open mainline conditions but informs risk and requirement baselines.`
+    },
+    {
+      id: '1-2', label: '1.2 Mission Statement Generation', kind: 'info', x: 359, y: 200, w: 120, h: 59,
+      content: `**Goal.** Actualise [D0](#/steps/1-concept-assurance/examples/d0) into *requirements* using **MoSCoW** (Must/Should/Could/Would) → becomes **[D2](#/steps/1-concept-assurance/examples/d2)**.
+
+**Must (examples)**
+- Detect large, static objects in the track corridor; infer own corridor via track extraction.
+- Enumerate environmental risks for Step 2 hazard identification.
+- Operate in a representative subset of the S-Bahn Berlin’s typical operation.
+- Be theoretically realisable within the tech envelope characterised in **[A](#/steps/1-concept-assurance/examples/a)**.
+- Achieve performance comparable to human drivers for the scoped tasks.
+
+**Should**
+- Detect moving objects relevant to risk.
+- Represent known-knowns and known-unknowns consistently between Scenario Definition and ODM; support Criticality Determination (Step 4).
+- Operate in typical non-disastrous adverse conditions (e.g., rain/snow) day or night.
+- Be representable in simulation as per Step 6.
+
+**Could**
+- Expand to full network and extreme conditions with sufficient data.
+- Discover new hazards not present in Steps 2/3 given broader observation.
+
+**Would**
+- Employ track-side sensing only when on-vehicle sensing is infeasible for the scoped scenario.`
+    },
+    {
+      id: '1-3', label: '1.3 Top-level Domain Model', kind: 'info', x: 494, y: 200, w: 120, h: 59,
+      content: `**Goal.** Draft a *top-level ODM* as a state machine representing the route: e.g., *Idle → Pre-Departure → Departure → Cruise → Station_Arrival → Passenger_Alighting → Passenger_Boarding → Station_Departure → …*
+
+**Method**
+- Identify *milestones* that trigger transitions (e.g., platform edge detected, departure signal cleared, speed limit change).
+- For each state, record entry/exit conditions and safety-relevant variables (speed, signal aspect visibility, train integrity).
+- Align with Scenario Definition in **[D1](#/steps/1-concept-assurance/examples/d1)** and boundary conditions from **[C](#/steps/1-concept-assurance/examples/c)**.
+- Produce an illustrative example **[E2](#/steps/1-concept-assurance/examples/e2)** to validate narrative coherence and support stakeholder review.`
+    },
+  ],
+  implementationMd: `Use interviews + document reviews to define stakeholders, assumptions and an initial ODM/SOC sketch. Produce D2 in MoSCoW and record the boundary conditions that shape Step 2 hazards and Step 6 assurance.`,
 },
+
+
 {
  number: 2,
     title: 'Step 2: Hazard Identification',
@@ -98,5 +158,4 @@ implementationMd: `**Do**:\n- Consolidate metric thresholds into operational gua
 export function getStepBySlug(slug: string) {
 return steps.find(s => s.slug === slug)
 }
-
 
