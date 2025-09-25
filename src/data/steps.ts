@@ -30,7 +30,7 @@ title: 'Step 1: Concept Assurance',
 slug: '1-concept-assurance',
 summary: 'Define purpose, stakeholders, assumptions, and a first-pass ODM with MoSCoW requirements.',
 subDiagramSrc: 'diagrams/step-1.svg',
-implementationMd: `**Do**:\n- Define MoSCoW: Must/Should/Could/Would.\n- Draft the ODM at high level (as understood by the system).\n- State the Scenario Definition and an initial SOC sketch.\n\n**Outputs**: Concept brief, MoSCoW list, v0 ODM.\n\n A scary fourth thing.`,
+implementationMd: `**Do**:\n- Define MoSCoW: Must/Should/Could/Would.\n- Draft the ODM at high level (as understood by the system).\n- State the Scenario Definition and an initial SOC sketch.\n\n**Outputs**: Concept brief, MoSCoW list, v0 ODM.\n\n A secret fourth thing.`,
 },
 {
  number: 2,
