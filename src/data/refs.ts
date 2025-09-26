@@ -2,9 +2,20 @@ import { examplesByStep } from './examples'
 
 export type RefEntry = { title: string; body: string; image?: string }
 
-// simple resolver: look in Step 1 registry by id (a,b,c,d,d0,d1,d2,e2)
-export function getRefById(id: string): RefEntry | null {
-  const table = examplesByStep['1-concept-assurance']
-  const hit = table?.[id.toLowerCase()]
-  return hit ?? null
+export function getRefById(id: string, preferredStepSlug?: string): RefEntry | null {
+  const key = id.toLowerCase()
+
+  // try the preferred step first
+  if (preferredStepSlug) {
+    const hit = examplesByStep[preferredStepSlug]?.[key]
+    if (hit) return hit
+  }
+
+  // then scan all steps
+  for (const slug of Object.keys(examplesByStep)) {
+    const hit = examplesByStep[slug]?.[key]
+    if (hit) return hit
+  }
+
+  return null
 }

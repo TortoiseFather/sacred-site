@@ -15,9 +15,13 @@ const GROUPS: Record<
     deliverables: string[]
   }
 > = {
+  '0-preliminary':{
+    artefacts:['0a','0b'],
+    deliverables:['d0'],
+  },
   '1-concept-assurance': {
-    artefacts: ['a', 'b', 'c', 'd'],    // A, B, C, D
-    deliverables: ['d0', 'd1', 'd2'],   // D0, D1, D2
+    artefacts: ['a', 'b', 'c', 'd'], 
+    deliverables: ['d1', 'd2'],   
   },
   // '2-hazard-identification': { artefacts: [...], deliverables: [...] },
 }

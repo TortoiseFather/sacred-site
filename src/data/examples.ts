@@ -4,8 +4,36 @@ type Example = { title: string; body: string; image?: string }
 type ExamplesByStep = Record<string, Record<string, Example>>
 
 export const examplesByStep: ExamplesByStep = {
+  '0-preliminary':{
+    '0-1':{
+      title: '0.1 Route Scoping.',
+      body: 'The design of the actual route itself, where is the train going to operate. At the stages of route 0, this could be vague for hypothetical routes, "a system between Oxford and Cambridge" or specific in the case of upgrading a pre-existing route "Passing through signals S23/S24 in Newcastle Upon Tyne."'
+    },
+    '0-2':{
+      title: '0.2 Stakeholder Gathering.',
+      body: 'tba'
+    },
+     d0: {
+      title: 'Deliverable D0 – Generic Concept',
+      body: `Deliverable D0 is produced by Step 0 and is essentially the abstract idea of the autonomous system.
+It captures a high-level concept for a railway system, for example:
+
+• "A fully autonomous version of the S-Bahn Berlin operating at GoA-4."
+• "A fully autonomous version of the UK mainline going between Swalwell Junction and Newcastle upon Tyne."
+
+D0 sets the vision SACRED Step 1 will begin to shape into more concrete artefacts.`,
+    },
+    '0a': {
+      title: 'Artefact 0A - Area Report',
+      body: `TBA`,
+    },
+    '0b': {
+      title: 'Artefact 0B - Funding Allocation',
+      body: `TBA`,
+    },
+
+  },
   '1-concept-assurance': {
-    // ───────────────────────── SUB-STEPS (these are separate pages) ─────────────────────────
     '1-1': {
       title: '1.1 SotA Comparison',
       body: `**Purpose.** Establish whether the concept in [D0](ref:d0) is feasible *for this route and context*, and surface constraints/assumptions that will shape requirements and later **Step 6 (AS Design Assurance)**.
@@ -18,7 +46,6 @@ export const examplesByStep: ExamplesByStep = {
 
 **Evidence example (E1).** Paris Métro Line 1 (GoA-4) demonstrates driverless operation feasibility in segregated infrastructure. **Implication:** comparable autonomy on open mainline will need additional mitigations (trespass, weather variability, complex interlockings).`
     },
-
     '1-2': {
       title: '1.2 Mission Statement (MoSCoW)',
       body: `**Purpose.** Transform [D0](ref:d0) into *verifiable requirements* using **MoSCoW**, yielding **[D2](ref:d2)**.
@@ -59,16 +86,6 @@ export const examplesByStep: ExamplesByStep = {
     },
 
     // ───────────────────────── DELIVERABLES / ARTEFACTS (inline panels via ref:…) ─────────────────────────
-    d0: {
-      title: 'Deliverable D0 – Generic Concept',
-      body: `Deliverable D0 is produced by Step 0 and is essentially the abstract idea of the autonomous system.
-It captures a high-level concept for a railway system, for example:
-
-• "A fully autonomous version of the S-Bahn Berlin operating at GoA-4."
-• "A fully autonomous version of the UK mainline going between Swalwell Junction and Newcastle upon Tyne."
-
-D0 sets the vision SACRED Step 1 will begin to shape into more concrete artefacts.`,
-    },
     d1: {
       title: 'Deliverable D1 – Scenario Definition (Initial)',
       body: `D1 is a specific list of operational scenarios defining exactly the scope of operation.
@@ -127,4 +144,11 @@ It provides a concrete way of representing the operational domain that stakehold
       image: assetUrl('images/TrainSM.png'),
     },
   },
+    '2-hazard-identification':{
+      '2-1': {
+      title: 'tba',
+      body: `tba`
+    },
+    }
 }
+

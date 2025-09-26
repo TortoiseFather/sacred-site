@@ -18,8 +18,15 @@ export const steps: Step[] = [
 number: 0,
 title: 'Concept',
 slug: '0-preliminary',
-summary: 'Scope the route and compile foundational artefacts to judge viability.',
+summary: 'There is an expectation that Step 0 has been done prior to the deployment of the SACRED methodology. Step 0 is the collection of basic information regarding the route, it\'s stakeholders and basic characteristics. The purpose of Step 0 is to take these charactersitics and use it to create a requirements document [D0](ref:d0).',
 diagramSrc: 'diagrams/step-0.svg',
+subHotspots:[
+{id: '0-1', label: '0.1 Route Scoping', kind: 'link', navigateTo: '/steps/0-preliminary/examples/0-1',x:0,y:73,w:120,h:60},
+{id: '0-2', label: '0.2 Stakeholder Gathering', kind: 'link', navigateTo: '/steps/0-preliminary/examples/0-2',x:170,y:73,w:120,h:60},
+{ id: 'd0', label: 'Deliverable D0', kind: 'info', x: 370,   y: 73, w: 120, h: 60 },
+{ id: '0b', label: 'Artefact 0B', kind: 'info', x: 252,   y: 139, w: 117, h: 60 },
+{ id: '0a', label: 'Artefact 0A', kind: 'info', x: 252,   y: 0, w: 117, h: 60 },
+],
 implementationMd: `**Inputs**: route name, public docs, stakeholder list.\n\n**Do**:\n- Collate signal maps and service patterns.\n- Capture known constraints (timetables, platforms, junctions).\n- Record data gaps + assumptions.\n\n**Outputs**: a route dossier to seed Step 1.`,
 },
 {
