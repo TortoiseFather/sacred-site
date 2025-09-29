@@ -19,7 +19,7 @@ number: 0,
 title: 'Concept',
 slug: '0-preliminary',
 summary: 'There is an expectation that Step 0 has been done prior to the deployment of the SACRED methodology. Step 0 is the collection of basic information regarding the route, it\'s stakeholders and basic characteristics. The purpose of Step 0 is to take these charactersitics and use it to create a requirements document [D0](ref:d0).',
-diagramSrc: 'diagrams/step-0.svg',
+diagramSrc: 'diagrams/Step-0.svg',
 subHotspots:[
 {id: '0-1', label: '0.1 Route Scoping', kind: 'link', navigateTo: '/steps/0-preliminary/examples/0-1',x:0,y:73,w:120,h:60},
 {id: '0-2', label: '0.2 Stakeholder Gathering', kind: 'link', navigateTo: '/steps/0-preliminary/examples/0-2',x:170,y:73,w:120,h:60},

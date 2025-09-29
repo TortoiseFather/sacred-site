@@ -82,7 +82,7 @@ D0 sets the vision SACRED Step 1 will begin to shape into more concrete artefact
 - Align with scenarios in **[D1](ref:d1)** and boundary conditions from **[C](ref:c)**.
 
 **Output.** A reviewable narrative + schematic (e.g., **[E2](ref:e2)**) that stakeholders validate before Step 2 hazards.`,
-      image: assetUrl('images/TrainSM.png'),
+      image: assetUrl('Images/TrainSM.png'),
     },
 
     // ───────────────────────── DELIVERABLES / ARTEFACTS (inline panels via ref:…) ─────────────────────────
@@ -141,7 +141,7 @@ For partial autonomy, it also clarifies what is expected to be autonomous and wh
 It scopes the route as a series of states, with transitions triggered through milestones (e.g., platform edge appears → Station Approach).
 
 It provides a concrete way of representing the operational domain that stakeholders can review before hazard analysis in Step 2.`,
-      image: assetUrl('images/TrainSM.png'),
+      image: assetUrl('Images/TrainSM.png'),
     },
   },
     '2-hazard-identification':{
