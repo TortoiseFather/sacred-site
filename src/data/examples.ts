@@ -50,6 +50,7 @@ D0 sets the vision SACRED Step 1 will begin to shape into more concrete artefact
       title: '1.2 Mission Statement (MoSCoW)',
       body: `**Purpose.** Transform [D0](ref:d0) into *verifiable requirements* using **MoSCoW**, yielding **[D2](ref:d2)**.
 
+**Example E2, a MoSCoW structure on a given UK main line route.** 
 ### Must (illustrative)
 - Detect large, static objects in the track corridor; infer corridor via track extraction.
 - Enumerate environmental risks to seed Step 2 hazard identification.
