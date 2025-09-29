@@ -95,15 +95,17 @@ Examples:
 • "When operating between Swalwell and Newcastle, the system is expected to operate during peak hours, regardless of weather, excluding extreme weather which causes a line to close."  
 • "This route involves going through tunnels, meaning that the risks associated with tunnels must be considered, including risk of structural damage from tunnels and visual impairment."
 
-D1 is not expected to be absolute and is only as good as the materials given; the rest of SACRED will iterate upon it.`,
+D1 is not expected to be absolute and is only as good as the materials given; the rest of SACRED will iterate upon it.
+As the Scenario Definition could be given (red) or a variable scoping of the environment (green) it is represented with a green/red gradient.`,
     },
     d2: {
       title: 'Deliverable D2 – MoSCoW Structure',
       body: `Deliverable D2 is the MoSCoW structure, which determines the scope of operation.
 It compares the wishes defined within D0 to the state of the art and identifies what is specifically required.
 
-It provides a structured way to capture requirements as Must/Should/Could/Would and is refined in later SACRED steps.`,
-    },
+It provides a structured way to capture requirements as Must/Should/Could/Would and is refined in later SACRED steps.
+As a standalone document produced by the SACRED methodology, we represent the MoSCoW structure as purple.`,
+},
     a: {
       title: 'Artefact A – State of the Art (SotA)',
       body: `Artefact A captures the state of the art as the operating party understands it.
