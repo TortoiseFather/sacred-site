@@ -56,7 +56,7 @@ implementationMd: `**Inputs**: route name, public docs, stakeholder list.\n\n**D
 
 {
  number: 2,
-    title: 'Step 2: Hazard Identification',
+    title: 'Hazard Identification',
     slug: '2-hazard-identification',
     summary: 'Map operational features and environmental risks; classify hazards by ego-vehicle vs ecosystem responsibility.',
     subDiagramSrc: 'diagrams/step-2.svg',
@@ -88,15 +88,33 @@ implementationMd: `**Inputs**: route name, public docs, stakeholder list.\n\n**D
 },
 {
 number: 3,
-title: 'Step 3: Requirements Capturing & Assurance',
+title: 'Requirements Capturing & Assurance',
 slug: '3-requirements',
 summary: 'Validate hazards and derive verifiable requirements that tie back to the ODM and stakeholders.',
-diagramSrc: 'diagrams/step-3.svg',
+subDiagramSrc: 'diagrams/step-3.svg',
+subHotspots: [
+        { id: 'd5', label: 'Deliverable D5', kind: 'info', x: 0,   y: 0, w: 120, h: 61 },
+        { id: 'd1', label: 'Deliverable D1', kind: 'info', x: 130, y: 0, w: 120, h: 61 },
+        { id: 'd7', label: 'Deliverable D7', kind: 'info', x: 420,y:0, w: 120, h: 61},
+        { id: 'd7', label: 'Deliverable D7', kind: 'info', x: 730,y:269, w: 120, h: 61},
+        { id: 'd8',  label: 'Deliverable D8',     kind: 'info', x: 200, y: 268, w: 120, h: 61  },
+        { id: 'd9',  label: 'Deliverable D9',     kind: 'info', x: 500, y: 268,   w: 120,  h: 61 },
+        { id: 'f',  label: 'Artefact F',     kind: 'info', x: 668, y: 0,   w: 80,  h: 62 },
+        { id: 'g',  label: 'Artefact G',     kind: 'info', x: 810, y: 0,   w: 80,  h: 62 },
+        { id: 'd10',  label: 'Deliverable D10',     kind: 'info', x: 951, y: 158,   w: 120,  h: 61 },
+
+          // Sub-steps (rectangles) → inline detailed info (markdown, with cross-links)
+          { id: '3-1', label: '3.1 Hazard Validation',         kind: 'link', navigateTo: '/steps/3-requirements/examples/3-1', x: 200, y: 158, w: 122, h: 62 },
+          { id: '3-2', label: '3.2 Mitigation Review',       kind: 'link', navigateTo: '/steps/3-requirements/examples/3-2', x: 350, y: 158, w: 122, h: 62 },
+          { id: '3-3', label: '3.3 Requirements Encapsulation',  kind: 'link', navigateTo: '/steps/3-requirements/examples/3-3', x: 499, y: 158, w: 122, h: 62 },
+          { id: '3-4', label: '3.4 ODM iteration',  kind: 'link', navigateTo: '/steps/3-requirements/examples/3-4', x: 648, y: 158, w: 122, h: 62 },
+          { id: '3-5', label: '3.5 Requirement Assurance',  kind: 'link', navigateTo: '/steps/3-requirements/examples/3-5', x: 798, y: 158, w: 122, h: 62 },
+ ],
 implementationMd: `**Do**:\n- Turn hazards into testable requirements.\n- Trace each to actors and operational contexts.\n- Prepare interview/review plans with practitioners.\n\n**Outputs**: Requirements spec + traceability matrix.`,
 },
 {
 number: 4,
-title: 'Step 4: Metrics that Matter',
+title: 'Metrics that Matter',
 slug: '4-metrics',
 summary: 'Define CSO/SOC/OSM metrics to monitor and control safety, aligned to the operation states.',
 diagramSrc: 'diagrams/Step-4.svg',
@@ -104,7 +122,7 @@ implementationMd: `**Do**:\n- Specify Context of Safe Operation (CSO) variables.
 },
 {
 number: 5,
-title: 'Step 5: Failure Management',
+title: 'Failure Management',
 slug: '5-safety-actualisation',
 summary: 'Declare what “failure” means early, design mitigations, and define minimum-risk states and transitions.',
 diagramSrc: 'diagrams/step-5.svg',
@@ -112,7 +130,7 @@ implementationMd: `**Do**:\n- Enumerate failure modes & detection logic.\n- Defi
 },
 {
 number: 6,
-title: 'Step 6: Autonomous System Design Assurance',
+title: 'Autonomous System Design Assurance',
 slug: '6-design-assurance',
 summary: 'Map technology to gaps surfaced by TRAP; ensure each tech adds assurance without introducing unmanaged risks.',
 diagramSrc: 'diagrams/step-6.svg',
@@ -120,7 +138,7 @@ implementationMd: `**Do**:\n- Select sensing/comms/control tech to close gaps.\n
 },
 {
 number: 7,
-title: 'Step 7: Safe Operating Context (SOC)',
+title: 'Safe Operating Context',
 slug: '7-soc',
 summary: 'Integrate metrics, requirements and failure modes into an actionable SOC for deployment and audit.',
 diagramSrc: 'diagrams/step-7.svg',

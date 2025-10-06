@@ -197,6 +197,49 @@ It provides a concrete way of representing the operational domain that stakehold
       body: `tba`
     },
     },
+    '3-requirements':{
+      '3-1':{
+        title: 'tba',
+        body: 'tba'
+      },
+      '3-2':{
+        title: 'tba',
+        body: 'tba'
+      },
+      '3-3':{
+        title: 'tba',
+        body: 'tba'
+      },
+      '3-4':{
+        title: 'tba',
+        body: 'tba'
+      },
+      '3-5':{
+        title: 'tba',
+        body: 'tba'
+      },
+      'f':{
+        title: 'RAIB Reports',
+        body: 'tba'
+      },
+      'g':{
+        title: 'Interviews',
+        body: 'There is an assumption that interviews will be held as part of the SACRED methodology, however, this is not necessarily required. Theoretically, interviews could be taken in advance and cross-referenced. \n Regardless, the purpose of the interviews in this context is the verification of requirements for the purpose of limitation gathering. An example of what to discuss within the interviews is the scope of [D7](ref:d7). For a full example of an interview in the context of the SACRED methodology, see https://ieeexplore.ieee.org/abstract/document/11107382.'
+      },
+      'd10':{
+        title: 'tba',
+        body: 'tba'
+      },
+      'd9':{
+        title: 'tba',
+        body: 'tba'
+      },
+      'd8':{
+        title: 'tba',
+        body: 'tba'
+      },
+    },
+    
     '6-design-assurance':{
       '6-1': {
       title: 'tba',
