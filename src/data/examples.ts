@@ -25,11 +25,11 @@ D0 sets the vision SACRED Step 1 will begin to shape into more concrete artefact
     },
     '0a': {
       title: 'Artefact 0A - Area Report',
-      body: `Certain routes will be variable, depending on the quality of signalling or any pre-existing requirement, an area report exists as a `,
+      body: `TBA`,
     },
     '0b': {
       title: 'Artefact 0B - Funding Allocation',
-      body: `Conceptually, funding allocation exists as a restriction. However, within the scope of SACRED, budgetary concerns are only relevant when creating requirements(ref:d1) and assuring the state of the art during Step 6(ref:6-design-assurance)`,
+      body: `TBA`,
     },
 
   },
@@ -152,56 +152,6 @@ It provides a concrete way of representing the operational domain that stakehold
       title: 'tba',
       body: `tba`
     },
-    '2-2':{
-      title: 'tba',
-      body: `tba`
-    },
-    '2-3':{
-      title: 'tba',
-      body: `tba`
-    },
-    '2-4':{
-      title: 'tba',
-      body: `tba`
-    },
-    '2-5':{
-      title: 'tba',
-      body: `tba`
-    },
-    '2-6':{
-      title: 'tba',
-      body: `tba`
-    },
-    e:{
-      title: 'tba',
-      body: `tba`
-    },
-    d3:{
-      title: 'tba',
-      body: `tba`
-    },
-    d4:{
-      title: 'tba',
-      body: `tba`
-    },
-    d5:{
-      title: 'tba',
-      body: `tba`
-    },
-    d6:{
-      title: 'tba',
-      body: `tba`
-    },
-    d7:{
-      title: 'tba',
-      body: `tba`
-    },
-    },
-    '6-design-assurance':{
-      '6-1': {
-      title: 'tba',
-      body: `tba`
-    }
     }
 }
 

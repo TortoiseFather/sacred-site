@@ -23,10 +23,6 @@ const GROUPS: Record<
     artefacts: ['a', 'b', 'c', 'd'], 
     deliverables: ['d1', 'd2'],   
   },
-  '2-hazard-identification': {
-    artefacts: ['e'], 
-    deliverables: ['d3', 'd4', 'd5', 'd6', 'd7'],   
-  },
   // '2-hazard-identification': { artefacts: [...], deliverables: [...] },
 }
 

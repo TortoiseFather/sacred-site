@@ -61,23 +61,10 @@ implementationMd: `**Inputs**: route name, public docs, stakeholder list.\n\n**D
     summary: 'Map operational features and environmental risks; classify hazards by ego-vehicle vs ecosystem responsibility.',
     subDiagramSrc: 'diagrams/step-2.svg',
     subHotspots: [
-        { id: 'd3', label: 'Deliverable D3', kind: 'info', x: 140,   y: 310, w: 120, h: 59 },
-        { id: 'd4', label: 'Deliverable D4', kind: 'info', x: 276, y: 310, w: 120, h: 59 },
-        { id: 'd5', label: 'Deliverable D5', kind: 'info', x: 353, y: 390, w: 120, h: 59 },
-        { id: 'b',  label: 'Artefact B',     kind: 'info', x: 0, y: 1,   w: 82,  h: 99 },
-        { id: 'c',  label: 'Artefact C',     kind: 'info', x: 140, y: 1,   w: 82,  h: 99 },
-        { id: 'e',  label: 'Artefact E',     kind: 'info', x: 290, y: 1,   w: 82,  h: 99 },
-        { id: 'd6',  label: 'Deliverable D6',     kind: 'info', x: 819, y: 325,   w: 120,  h: 59 },
-        { id: 'd7',  label: 'Deliverable D7',     kind: 'info', x: 1000, y: 210,   w: 120,  h: 59 },
-
-          // Sub-steps (rectangles) → inline detailed info (markdown, with cross-links)
-          { id: '2-1', label: '2.1 Operational Feature Mapping',         kind: 'link', navigateTo: '/steps/2-hazard-identification/examples/2-1', x: 70, y: 210, w: 120, h: 59 },
-          { id: '2-2', label: '2.2 Environmental Risk Mapping',       kind: 'link', navigateTo: '/steps/2-hazard-identification/examples/2-2', x: 210, y: 210, w: 120, h: 59 },
-          { id: '2-3', label: '2.3 Eco-Ego Classification',  kind: 'link', navigateTo: '/steps/2-hazard-identification/examples/2-3', x: 353, y: 210, w: 120, h: 59 },
-          { id: '2-4', label: '2.4 Hazard Compensation',  kind: 'link', navigateTo: '/steps/2-hazard-identification/examples/2-4', x: 497, y: 210, w: 120, h: 59 },
-          { id: '2-5a', label: '2.5a Ego Hazard Analysis',  kind: 'link', navigateTo: '/steps/2-hazard-identification/examples/2-5', x: 660, y: 149, w: 120, h: 59 },
-          { id: '2-5b', label: '2.5b Eco Hazard Analysis',  kind: 'link', navigateTo: '/steps/2-hazard-identification/examples/2-5', x: 660, y: 271, w: 120, h: 59 },
-          { id: '2-6', label: '2.6 Identification of Components',  kind: 'link', navigateTo: '/steps/2-hazard-identification/examples/2-6', x: 820, y: 210, w: 120, h: 59 },
+      { id: 'ego-analysis', x: 163, y: 288, w: 86, h: 43, label: 'Ego Hazard Analysis',
+        content: 'Hazards owned by the ego-vehicle given onboard capabilities and duties.' },
+      { id: 'eco-analysis', x: 249, y: 288, w: 86, h: 43, label: 'ECO Hazard Analysis',
+        content: 'Hazards managed by signalling/ops/infrastructure; clarifies interfaces and handoffs.' },
     ],
     implementationMd: `**Do**:
 - Map mandatory operations (signals, junctions, limits).
