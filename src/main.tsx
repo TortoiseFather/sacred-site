@@ -4,11 +4,13 @@ import { HashRouter, Routes, Route } from 'react-router-dom'
 import './styles/globals.css'
 import Home from './routes/Home'
 import StepPage from './routes/StepPage'
-import StepExample from './routes/StepExample'   // <-- make sure this import exists
+import StepExample from './routes/StepExample'
+import CitationProvider from './components/CitationProvider'
 import RefProvider from './components/RefProvider'
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <HashRouter>
+      <CitationProvider>
       <RefProvider>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -16,6 +18,7 @@ createRoot(document.getElementById('root')!).render(
           <Route path="/steps/:stepSlug/examples/:exampleId" element={<StepExample />} />
         </Routes>
       </RefProvider>
+      </CitationProvider>
     </HashRouter>
   </StrictMode>
 )

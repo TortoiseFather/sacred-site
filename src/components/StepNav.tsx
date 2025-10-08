@@ -30,10 +30,15 @@ const GROUPS: Record<
   // '2-hazard-identification': { artefacts: [...], deliverables: [...] },
 }
 
-function refTitle(stepSlug: string, id: string): string {
-  return examplesByStep[stepSlug]?.[id]?.title ?? id.toUpperCase()
-}
+import { getRefTitleAny } from '../data/refs'
 
+function refTitle(stepSlug: string, id: string): string {
+  return (
+    examplesByStep[stepSlug]?.[id]?.title ??
+    getRefTitleAny(id) ??
+    id.toUpperCase()
+  )
+}
 export default function StepNav() {
   const { pathname, hash } = useLocation()
   const { openRef } = useRefPanel()

@@ -219,3 +219,34 @@ footer { border-top:1px solid #e5e7eb; padding:16px 0; margin-top:32px; color:va
 .step-nav .ref-link:hover { color: #2563eb; }
 
 .step-nav .chev { opacity: 0.6; }
+
+.markdown img {
+  display: block;
+  max-width: 700px;   /* or whatever fixed width you want */
+  width: 100%;        /* shrink responsively */
+  height: auto;
+  margin: 1rem auto;
+  border-radius: 8px; /* optional */
+}
+.info-panel.card {
+  max-width: 800px;        /* optional, fixes horizontal stretch */
+  max-height: 65vh;        /* keeps it from covering the whole screen */
+  overflow-y: auto;        /* scroll content instead of expanding */
+  overflow-x: hidden;
+}
+
+/* optional: keep padding when scrolling */
+.info-panel.card::-webkit-scrollbar {
+  width: 8px;
+}
+.info-panel.card::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 8px;
+}
+.info-panel.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
