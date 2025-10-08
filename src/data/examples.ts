@@ -1,6 +1,6 @@
 import { assetUrl } from '../lib/assetUrl'
 
-type Example = { title: string; body: string; image?: string }
+type Example = { title: string; image?: string; body?: string }
 type ExamplesByStep = Record<string, Record<string, Example>>
 
 export const examplesByStep: ExamplesByStep = {
@@ -15,13 +15,6 @@ export const examplesByStep: ExamplesByStep = {
     },
      d0: {
       title: 'Deliverable D0 – Generic Concept',
-      body: `Deliverable D0 is produced by Step 0 and is essentially the abstract idea of the autonomous system.
-It captures a high-level concept for a railway system, for example:
-
-• "A fully autonomous version of the S-Bahn Berlin operating at GoA-4."
-• "A fully autonomous version of the UK mainline going between Swalwell Junction and Newcastle upon Tyne."
-
-D0 sets the vision SACRED Step 1 will begin to shape into more concrete artefacts.`,
     },
     '0a': {
       title: 'Artefact 0A - Area Report',
@@ -36,15 +29,6 @@ D0 sets the vision SACRED Step 1 will begin to shape into more concrete artefact
   '1-concept-assurance': {
     '1-1': {
       title: '1.1 SotA Comparison',
-      body: `**Purpose.** Establish whether the concept in [D0](ref:d0) is feasible *for this route and context*, and surface constraints/assumptions that will shape requirements and later **Step 6 (AS Design Assurance)**.
-
-**Activities**
-- Survey peer systems (metros, mainline pilots), standards (CBTC, ETCS, IEC/EN), supplier capabilities, and operator experience.
-- Extract *capabilities & limits* relevant to your environment: signalling type, comms coverage, platform geometry, adhesion/low-adhesion handling, sensing ranges/occlusions, fail-safe behaviours.
-- Map findings to scenarios in [D1](ref:d1) (e.g., tunnels, weather regime, peak loads).
-- Record a concise **Artefact [A] SotA** (see [A](ref:a)): what exists, what’s proven, and what’s merely plausible.
-
-**Evidence example (E1).** Paris Métro Line 1 (GoA-4) demonstrates driverless operation feasibility in segregated infrastructure. **Implication:** comparable autonomy on open mainline will need additional mitigations (trespass, weather variability, complex interlockings).`
     },
     '1-2': {
       title: '1.2 Mission Statement (MoSCoW)',
