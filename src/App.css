@@ -40,11 +40,3 @@
 .read-the-docs {
   color: #888;
 }
-.markdown img {
-  display: block;
-  max-width: 500px;   /* or whatever fixed width you want */
-  width: 100%;        /* shrink responsively */
-  height: auto;
-  margin: 1rem auto;
-  border-radius: 8px; /* optional */
-}
