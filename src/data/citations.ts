@@ -16,6 +16,10 @@ export const citations: Record<string, CitationEntry> = {
     id: '2',
     text: 'BS EN 50129:2019 Safety related electronic systems for signalling'
   },
+  '3':{
+    id:'3',
+    text: 'Clegg, Dai; Barker, Richard (1994). Case Method Fast-Track: A RAD Approach. Addison-Wesley. ISBN 978-0-201-62432-8.'
+  },
   '5': {
     id: '5',
     text: 'Gibert et al., Deep Multitask Learning for Railway Track Inspection (2017)'

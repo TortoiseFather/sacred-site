@@ -33,7 +33,7 @@ implementationMd: `**Inputs**: route name, public docs, stakeholder list.\n\n**D
   number: 1,
   title: 'Concept Assurance',
   slug: '1-concept-assurance',
-  summary: 'Define purpose, stakeholders, assumptions, and a first-pass ODM with MoSCoW requirements.',
+  summary: 'Establish the conceptual foundation for a given railway system or route. Moving from understanding the wider state of the art (SotA) and existing systems, into defining the mission statement and intended purpose of the proposed system, then into scoping the operational area, culminating in a scenario definition that expresses how the system is expected to behave within that area. Step 1 is about finding the correct questions to answer and in summary, assuring the given concept.',
   subDiagramSrc: 'diagrams/step-1.svg',
   subHotspots: [
     // Inputs/deliverables (parallelograms) → link to example pages
