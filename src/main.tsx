@@ -11,13 +11,13 @@ createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <HashRouter>
       <CitationProvider>
-      <RefProvider>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/steps/:slug" element={<StepPage />} />
-          <Route path="/steps/:stepSlug/examples/:exampleId" element={<StepExample />} />
-        </Routes>
-      </RefProvider>
+        <RefProvider>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/steps/:slug" element={<StepPage />} />
+            <Route path="/steps/:stepSlug/examples/:exampleId" element={<StepExample />} />
+          </Routes>
+        </RefProvider>
       </CitationProvider>
     </HashRouter>
   </StrictMode>

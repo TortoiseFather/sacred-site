@@ -3,9 +3,10 @@ import { useParams, Link } from 'react-router-dom'
 import Layout from '../components/Layout'
 import StepNav from '../components/StepNav'
 import { steps, getStepBySlug } from '../data/steps'
-import { marked } from 'marked'
 import SubDiagram from '../components/SubDiagram'
 import RefPanelSlot from '../components/RefPanelSlot'
+import { renderBlock } from '../lib/md'   // <-- use your md helper
+
 export default function StepPage() {
   const { slug } = useParams()
   const step = getStepBySlug(slug!)
@@ -29,17 +30,26 @@ export default function StepPage() {
         </aside>
 
         <section className="content">
-          {/* Sub-diagram at the top.
-             - link hotspots navigate via <a href="#/..."> inside SubDiagram
-             - info hotspots call openRef(id) via RefProvider (global inline panel) */}
-          <SubDiagram src={step.subDiagramSrc ?? `diagrams/step-${step.number}.svg`} hotspots={step.subHotspots ?? []} />
-          <RefPanelSlot /> 
+          {/* Sub-diagram and inline ref panel */}
+          <SubDiagram
+            src={step.subDiagramSrc ?? `diagrams/step-${step.number}.svg`}
+            hotspots={step.subHotspots ?? []}
+          />
+          <RefPanelSlot />
 
           <h1>Step {step.number}: {step.title}</h1>
-          <p className="small">{step.summary}</p>
+
+          {/* Render SUMMARY as Markdown (so cite:/ref:/step: links work) */}
+          <div
+            className="small"
+            dangerouslySetInnerHTML={{ __html: renderBlock(step.summary) }}
+          />
 
           <h2>How to implement</h2>
-          <div dangerouslySetInnerHTML={{ __html: marked.parse(step.implementationMd) }} />
+          {/* Render implementationMd via the same renderer for consistency */}
+          <div
+            dangerouslySetInnerHTML={{ __html: renderBlock(step.implementationMd) }}
+          />
 
           {next && (
             <p style={{ marginTop: 24 }}>

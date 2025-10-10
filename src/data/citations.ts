@@ -20,6 +20,10 @@ export const citations: Record<string, CitationEntry> = {
     id:'3',
     text: 'Clegg, Dai; Barker, Richard (1994). Case Method Fast-Track: A RAD Approach. Addison-Wesley. ISBN 978-0-201-62432-8.'
   },
+  '4':{
+    id:'4',
+    text:' Lovell, B. E. (1995). A Taxonomy of Types of Uncertainty. Portland, OR: Portland State University.'
+  },
   '5': {
     id: '5',
     text: 'Gibert et al., Deep Multitask Learning for Railway Track Inspection (2017)'
@@ -40,6 +44,15 @@ export const citations: Record<string, CitationEntry> = {
     id: '9',
     text: 'Hunter J., On SACRED: A Document (2025)'
   },
+  '10':{
+    id:'10',
+    text: 'Simon Burton, Benjamin Herd, Addressing uncertainty in the safety assurance of machine-learning Volume 5 - 2023 | https://doi.org/10.3389/fcomp.2023.1132580'
+  },
+  '11':{
+    id:'11',
+    text:'Tetsuo Uzuka - System of Systems in Railway March 2023 DOI: 10.1007/978-981-19-7776-3_16'
+  },
+  
   '14': {
     id: '14',
     text: 'Medossi G., Handbook of Optimisation in the Railway Industry (2018)'

@@ -58,7 +58,7 @@ implementationMd: `**Inputs**: route name, public docs, stakeholder list.\n\n**D
  number: 2,
     title: 'Hazard Identification',
     slug: '2-hazard-identification',
-    summary: 'Map operational features and environmental risks; classify hazards by ego-vehicle vs ecosystem responsibility.',
+    summary: 'Transition from conceptual understanding to environmental comprehension. Step 2 draws upon the Manifestations of Uncertainty as defined by Lovell [[4]](cite:4) as interporated by Burton to apply to Autonomy [[10]](cite:10).  \n\n Uncertainty in autonomous systems does not arise solely from technical limitations, but from the interaction between the system and the world it inhabits. Lovell distinguishes between what the system does not yet know and the intrinsic variability of the world, while Burton extends this by showing how these uncertainties manifest operationally.   \n\n Within the railway domain, the environmnet is both structured and unpredictable, the same signal, the same track, may produce radically different risk profiles depending on weather, traffic, or human interaction.   \n\n It is these features which we aim to map within step 2. By decomposing the route into its operational features and environmental risks, and by classifying each hazard from both eco (ecosystem) and ego (vehicle) perspectives, we begin to see how uncertainty flows through the system of systems that constitutes rail operation [[11]](cite:11),[[6]](cite:6)',
     subDiagramSrc: 'diagrams/step-2.svg',
     subHotspots: [
         { id: 'd3', label: 'Deliverable D3', kind: 'info', x: 140,   y: 310, w: 120, h: 59 },
