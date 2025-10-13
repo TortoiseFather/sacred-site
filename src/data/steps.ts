@@ -39,11 +39,11 @@ implementationMd: `**Inputs**: route name, public docs, stakeholder list.\n\n**D
     // Inputs/deliverables (parallelograms) → link to example pages
   { id: 'd0', label: 'Deliverable D0', kind: 'info', x: 1,   y: 181, w: 161, h: 90 },
   { id: 'd2', label: 'Deliverable D2', kind: 'info', x: 465, y: 279, w: 120, h: 59 },
-  { id: 'd1', label: 'Deliverable D1', kind: 'info', x: 900, y: 200, w: 120, h: 59 },
-  { id: 'a',  label: 'Artefact A',     kind: 'info', x: 476, y: 1,   w: 96,  h: 59 },
-  { id: 'b',  label: 'Artefact B',     kind: 'info', x: 580, y: 1,   w: 96,  h: 59 },
-  { id: 'c',  label: 'Artefact C',     kind: 'info', x: 690, y: 1,   w: 96,  h: 59 },
-  { id: 'd',  label: 'Artefact D',     kind: 'info', x: 793, y: 1,   w: 96,  h: 59 },
+  { id: 'd1', label: 'Deliverable D1', kind: 'info', x: 824, y: 200, w: 120, h: 59 },
+  { id: 'a',  label: 'Artefact A',     kind: 'info', x: 62, y: 19,   w: 96,  h: 59 },
+  { id: 'b',  label: 'Artefact B',     kind: 'info', x: 497, y: 1,   w: 96,  h: 59 },
+  { id: 'c',  label: 'Artefact C',     kind: 'info', x: 602, y: 1,   w: 96,  h: 59 },
+  { id: 'd',  label: 'Artefact D',     kind: 'info', x: 715, y: 1,   w: 96,  h: 59 },
 
     // Sub-steps (rectangles) → inline detailed info (markdown, with cross-links)
     { id: '1-1', label: '1.1 SotA Comparison',         kind: 'link', navigateTo: '/steps/1-concept-assurance/examples/1-1', x: 229, y: 200, w: 111, h: 59 },
@@ -78,6 +78,7 @@ implementationMd: `**Inputs**: route name, public docs, stakeholder list.\n\n**D
           { id: '2-5a', label: '2.5a Ego Hazard Analysis',  kind: 'link', navigateTo: '/steps/2-hazard-identification/examples/2-5', x: 660, y: 149, w: 120, h: 59 },
           { id: '2-5b', label: '2.5b Eco Hazard Analysis',  kind: 'link', navigateTo: '/steps/2-hazard-identification/examples/2-5', x: 660, y: 271, w: 120, h: 59 },
           { id: '2-6', label: '2.6 Identification of Components',  kind: 'link', navigateTo: '/steps/2-hazard-identification/examples/2-6', x: 820, y: 210, w: 120, h: 59 },
+          { id: '2-e', label: '2.Extra Manifestations of Uncertainty', kind: 'link', navigateTo: 'steps/2-hazard-identification/examples/2-e', x:0, y:0, w:0, h:0},
     ],
     implementationMd: `**Do**:
 - Map mandatory operations (signals, junctions, limits).

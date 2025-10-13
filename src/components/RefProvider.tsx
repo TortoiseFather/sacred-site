@@ -37,7 +37,7 @@ export default function RefProvider({ children }: { children: React.ReactNode })
     // Resolve globally; prefer current step if it owns the id
     const meta = resolveRef(id, currentStepSlug)
     if (!meta) return
-
+    window.scrollTo({ top: 0, behavior: 'smooth' })
     setEntry({ id, data: { title: meta.title, body: '', image: meta.image }, loading: true })
 
     fetchRefMd(meta.stepSlug, id)

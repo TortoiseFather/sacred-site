@@ -52,7 +52,14 @@ export const citations: Record<string, CitationEntry> = {
     id:'11',
     text:'Tetsuo Uzuka - System of Systems in Railway March 2023 DOI: 10.1007/978-981-19-7776-3_16'
   },
-  
+  '12':{
+    id:'12',
+    text:'International Electrotechnical Commissions standard IEC 62267'
+  },
+  '13':{
+    id:'13',
+    text:'Urban rail transit FAO system: technological development and trends.'
+  },
   '14': {
     id: '14',
     text: 'Medossi G., Handbook of Optimisation in the Railway Industry (2018)'

@@ -80,6 +80,9 @@ export const examplesByStep: ExamplesByStep = {
     '2-6':{
       title: 'tba',
     },
+    '2-e':{
+      title: 'Manifestations of Uncertainty: An exploration.'
+    },
     e:{
       title: 'tba',
     },
