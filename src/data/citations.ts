@@ -104,6 +104,18 @@ export const citations: Record<string, CitationEntry> = {
     id:'23',
     text:'Reason, James (1990-04-12). "The Contribution of Latent Human Failures to the Breakdown of Complex Systems". Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences. 327 (1241): 475–84. Bibcode:1990RSPTB.327..475R. doi:10.1098/rstb.1990.0090. JSTOR 55319. PMID 1970893'
   },
+  '24':{
+    id:'24',
+    text:'Network Rail Weather Advisory Task Force Final Report, Slingo, Julia and Davies, Paul and Gowler, Hayley, 2021'
+  },
+  '25':{
+    id:'25',
+    text:'J. Boyd C. Spinney, C. Richards, G. Richards (Eds.), The essence of winning and losing (1995, 2010) Project on Government Oversight (Archives) http://pogoarchives.org/m/dni/john_boyd_compendium/essence_of_winning_losing.pdf'
+  },
+  '26':{
+    id:'26',
+    text:' Fault tolerance, principles and practice / P.A. Lee, T. Anderson. Lee, P. A., 1950-; Anderson, T.'
+  },
   '30': {
     id: '30',
     text: 'Hawkins et al., Guidance on the Safety Assurance of Autonomous Systems in Complex Environments (SACE) (2022)'
