@@ -16,6 +16,10 @@ export const citations: Record<string, CitationEntry> = {
     id: '2',
     text: 'BS EN 50129:2019 Safety related electronic systems for signalling'
   },
+  'e1':{
+    id:'e1',
+    text: 'maliciously or otherwise.'
+  },
   '3':{
     id:'3',
     text: 'Clegg, Dai; Barker, Richard (1994). Case Method Fast-Track: A RAD Approach. Addison-Wesley. ISBN 978-0-201-62432-8.'
@@ -68,6 +72,10 @@ export const citations: Record<string, CitationEntry> = {
     id: '15',
     text: 'RAIB Report R22/2022 (Carmont Derailment, Scotland)'
   },
+  '16':{
+    id: '16',
+    text: 'Impact of signalling system on capacity – Comparing legacy ATC, ETCS level 2 and ETCS hybrid level 3 systems'
+  },
   '17': {
     id: '17',
     text: 'Moreno et al., A Survey on Future Railway Radio Communications Services (2015)'
@@ -76,9 +84,25 @@ export const citations: Record<string, CitationEntry> = {
     id: '18',
     text: 'Anderson & Lee, The How of Fault Tolerance (1981)'
   },
+  '19':{
+    id: '19',
+    text: 'Ramírez Márquez, Roberto & Adin, Inigo & Goya, Jon & Alvarado, Unai & Brazález, Alfonso & Mendizabal, Jaizki. (2022). Freight Train in the Age of Self-Driving Vehicles. A Taxonomy Review. IEEE Access. PP. 1-1. 10.1109/ACCESS.2022.3144602.'
+  },
   '20': {
     id: '20',
     text: 'Reichmann et al., Grades of Automation for Shunting Operations (2025)'
+  },
+  '21': {
+    id: '21',
+    text: 'People and Rail Systems Human Factors at the Heart of the Railway, Ann M. Mills, John R. Wilson, B. Norris'
+  },
+  '22':{
+    id:'22',
+    text:'Modeling and Measuring Situation Awareness in the Infantry Operational Environment, Endley Mica, Garland Daniel, Wampler Richard and Matthews Michael'
+  },
+  '23':{
+    id:'23',
+    text:'Reason, James (1990-04-12). "The Contribution of Latent Human Failures to the Breakdown of Complex Systems". Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences. 327 (1241): 475–84. Bibcode:1990RSPTB.327..475R. doi:10.1098/rstb.1990.0090. JSTOR 55319. PMID 1970893'
   },
   '30': {
     id: '30',

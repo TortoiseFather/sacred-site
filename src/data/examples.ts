@@ -63,40 +63,40 @@ export const examplesByStep: ExamplesByStep = {
   },
     '2-hazard-identification':{
       '2-1': {
-      title: 'tba',
+      title: 'Operational Feature Mapping',
     },
     '2-2':{
-      title: 'tba',
+      title: 'Environmental Risk Mapping',
     },
     '2-3':{
-      title: 'tba',
+      title: 'Eco-Ego Classification',
     },
     '2-4':{
-      title: 'tba',
+      title: 'Hazard Compensation',
     },
     '2-5':{
-      title: 'tba',
+      title: 'EcoEgo Hazard Analysis',
     },
     '2-6':{
-      title: 'tba',
+      title: 'Identification of Components',
     },
     '2-e':{
       title: 'Manifestations of Uncertainty: An exploration.'
     },
     e:{
-      title: 'tba',
+      title: 'Domain Knowledge',
     },
     d3:{
-      title: 'tba',
+      title: 'Hazard Register',
     },
     d4:{
-      title: 'tba',
+      title: 'Fault Tree',
     },
     d5:{
-      title: 'tba',
+      title: 'EcoEgo Assignment',
     },
     d6:{
-      title: 'tba',
+      title: 'State Map',
     },
     d7:{
       title: 'Verified ODM',
