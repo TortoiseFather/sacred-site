@@ -34,6 +34,12 @@ export const examplesByStep: ExamplesByStep = {
       title: '1.3 Top-level Domain Model',
       image: assetUrl('Images/signalsabstracted.png'),
     },
+    '1-e':{
+      title:'Operational Domain Model'
+    },
+    '1.1-e':{
+      title:'The Ecosystem'
+    },
 
     // ───────────────────────── DELIVERABLES / ARTEFACTS (inline panels via ref:…) ─────────────────────────
     d1: {
@@ -81,7 +87,7 @@ export const examplesByStep: ExamplesByStep = {
       title: 'Identification of Components',
     },
     '2-e':{
-      title: 'Manifestations of Uncertainty: An exploration.'
+      title: 'Manifestations of Uncertainty.'
     },
     e:{
       title: 'Domain Knowledge',
@@ -137,7 +143,16 @@ export const examplesByStep: ExamplesByStep = {
         title: 'Hazard Register',
       },
     },
-    
+    '4-metrics':{
+      '4-e':{
+        title:'Milestones'
+      }
+    },
+    '5-safety-actualisation':{
+      '5-e':{
+        title:'TRAP Paradigm'
+      },
+    },
     '6-design-assurance':{
       '6-1': {
       title: 'six point one',

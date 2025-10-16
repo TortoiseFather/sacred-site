@@ -116,6 +116,18 @@ export const citations: Record<string, CitationEntry> = {
     id:'26',
     text:' Fault tolerance, principles and practice / P.A. Lee, T. Anderson. Lee, P. A., 1950-; Anderson, T.'
   },
+  '27':{
+    id:'27',
+    text:'Moloney, W.: Applying Simulation Techniques to Train Railway Traction Drivers, Section 6.5. Ph.D. thesis, Birmingham, COLLEGE OF ENGINEERING AND PHYSICAL SCIENCES SCHOOL OF ENGINEERING DEPARTMENT OF CIVIL ENGINEERING (Sep 2017), https://etheses.bham.ac.uk/id/eprint/8370/1/Moloney18PhD.pdf'
+  },
+  '28':{
+    id:'28',
+    text:'Operational Design Domain Narrow frame provides safety, Salvi 2022, https://safe-intelligence.fraunhofer.de/en/articles/odd-narrow-frame-provides-safety'
+  },
+  '29':{
+    id:'29',
+    text:'Formalization of Operational Domain and Operational Design Domain for Automated Vehicles, Ali Shakeri, https://arxiv.org/abs/2408.14481'
+  },
   '30': {
     id: '30',
     text: 'Hawkins et al., Guidance on the Safety Assurance of Autonomous Systems in Complex Environments (SACE) (2022)'
@@ -128,8 +140,24 @@ export const citations: Record<string, CitationEntry> = {
     id: '32',
     text: 'Salvi et al., Fuzzy Interpretation of Operational Design Domains in Autonomous Driving (2022)'
   },
+  '33':{
+    id: '33',
+    text: 'Mainline Automatic Train Horn and Brake Performance Metric, Rustam Tagiew 2023 https://arxiv.org/abs/2307.02586'
+  },
+  '34':{
+    id:'34',
+    text:'Towards a Specified Operational Design Domain for a Safe Remote Driving of Trains, Simon Collart-Dutilleul, Julie Beugin, Abhimanyu Tonk, Abderraouf Boussif'
+  },
+  '35':{
+    id:'35',
+    text:'Maintaining Railway Safety in an Ever-Changing World, Peter Sheppard, Ross Dunsford 2024 https://doi.org/10.1080/09617353.2023.2289322'
+  },
   '40': {
     id: '40',
     text: 'Benerecetti et al., Dynamic State Machines for Modelling Railway Control Systems (2019)'
+  },
+  'stateexplosion':{
+    id:'stateexplosion',
+    text: 'The concept of a system’s possible environmental and operational conditions increasing combinatorially, to the point where it becomes infeasible to model, analyse, or verify every potential state within the operational design domain.'
   }
 }

@@ -1,60 +1,99 @@
 import { useMemo, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { steps } from '../data/steps'
+import { steps as rawSteps } from '../data/steps'
 import { examplesByStep } from '../data/examples'
 import { useRefPanel } from '../context/ref-context'
+import { getRefTitleAny } from '../data/refs'
+
+/** ---- Types ---- */
+type RefId = string
+
+type HotspotKind = 'link' | 'info'
+interface SubHotspot {
+  id: string
+  label: string
+  kind: HotspotKind
+  navigateTo?: string
+  x: number
+  y: number
+  w: number
+  h: number
+  /** Optional flag if you ever want explicit dictionary tagging */
+  isDictionary?: boolean
+}
+
+interface Step {
+  number: number
+  title: string
+  slug: string
+  subHotspots?: SubHotspot[]
+}
+
+/** Strongly-typed steps (no `any`) */
+const steps = rawSteps as Step[]
 
 /**
  * Configure which refs belong to which group per step.
  * Add more steps as you flesh them out.
  */
 const GROUPS: Record<
-  string, // step slug
+  string,
   {
-    artefacts: string[]
-    deliverables: string[]
+    artefacts: RefId[]
+    deliverables: RefId[]
   }
 > = {
-  '0-preliminary':{
-    artefacts:['0a','0b'],
-    deliverables:['d0'],
+  '0-preliminary': {
+    artefacts: ['0a', '0b'],
+    deliverables: ['d0'],
   },
   '1-concept-assurance': {
-    artefacts: ['a', 'b', 'c', 'd'], 
-    deliverables: ['d1', 'd2'],   
+    artefacts: ['a', 'b', 'c', 'd'],
+    deliverables: ['d1', 'd2'],
   },
   '2-hazard-identification': {
-    artefacts: ['e'], 
-    deliverables: ['d3', 'd4', 'd5', 'd6', 'd7'],   
+    artefacts: ['e'],
+    deliverables: ['d3', 'd4', 'd5', 'd6', 'd7'],
   },
-  // '2-hazard-identification': { artefacts: [...], deliverables: [...] },
+  // add more as needed...
 }
 
-import { getRefTitleAny } from '../data/refs'
-
+/** Helpers */
 function refTitle(stepSlug: string, id: string): string {
   return (
-    examplesByStep[stepSlug]?.[id]?.title ??
+    examplesByStep[stepSlug as keyof typeof examplesByStep]?.[id as keyof (typeof examplesByStep)[string]]?.title ??
     getRefTitleAny(id) ??
     id.toUpperCase()
   )
 }
+
+type DictItem = {
+  stepSlug: string
+  stepNumber: number
+  id: string
+  title: string
+  to: string
+}
+
+/** Type guard for a dictionary hotspot (your `^\d+-e$` rule) */
+const isDictionaryId = (id: string) => /^\d+(?:\.\d+)*-e$/.test(id)
+
 export default function StepNav() {
   const { pathname, hash } = useLocation()
   const { openRef } = useRefPanel()
   const [openStep, setOpenStep] = useState<string | null>(null)
-  const [openGroup, setOpenGroup] = useState<{ [slug: string]: 'artefacts' | 'deliverables' | null }>({})
+  const [openGroup, setOpenGroup] = useState<Record<string, 'artefacts' | 'deliverables' | null>>({})
+  const [openDictionary, setOpenDictionary] = useState(false)
 
   // pick the active step based on the current route/hash
   const activeSlug = useMemo(() => {
     // /#/steps/<slug> or /#/steps/<slug>/examples/<id>
     const m = (hash || pathname).match(/\/steps\/([^/]+)/)
-    return m?.[1] ?? steps[0].slug
+    return m?.[1] ?? steps[0]?.slug ?? ''
   }, [pathname, hash])
 
   const toggleStep = (slug: string) => {
     setOpenStep(prev => (prev === slug ? null : slug))
-    // initialise group closed when opening a different step
     setOpenGroup(g => ({ ...g, [slug]: null }))
   }
 
@@ -62,14 +101,69 @@ export default function StepNav() {
     setOpenGroup(g => ({ ...g, [slug]: g[slug] === group ? null : group }))
   }
 
+  // Collect dictionary pages once (typed, no `any`)
+  const dictionaryItems = useMemo<DictItem[]>(() => {
+    const items: DictItem[] = []
+    for (const step of steps) {
+      const subs = step.subHotspots ?? []
+      for (const h of subs) {
+        if (h?.id && (h.isDictionary || isDictionaryId(h.id))) {
+          const id = h.id
+          const stepSlug = step.slug
+          items.push({
+            stepSlug,
+            stepNumber: step.number,
+            id,
+            title: refTitle(stepSlug, id),
+            to: `/steps/${stepSlug}/examples/${id}`,
+          })
+        }
+      }
+    }
+    items.sort((a, b) => (a.stepNumber - b.stepNumber) || a.id.localeCompare(b.id))
+    return items
+  }, [])
+
   return (
     <nav aria-label="SACRED steps" className="step-nav">
       <div className="nav-header">Steps</div>
 
+      {/* Dictionary */}
+      {dictionaryItems.length > 0 && (
+        <div className="nav-item">
+          <button
+            type="button"
+            className="nav-step"
+            onClick={() => setOpenDictionary(v => !v)}
+            aria-expanded={openDictionary}
+          >
+            <div className="nav-step-title">Dictionary</div>
+            <span className="chev">{openDictionary ? '▾' : '▸'}</span>
+          </button>
+
+          {openDictionary && (
+            <ul className="group-list" style={{ marginTop: 6 }}>
+              {dictionaryItems.map((item) => (
+                <li key={`${item.stepSlug}:${item.id}`}>
+                  <Link
+                    className="ref-link"
+                    to={item.to}
+                    title={item.title}
+                  >
+                    {item.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+      )}
+
+      {/* Steps tree */}
       {steps.map(step => {
         const isActive = step.slug === activeSlug
         const isOpen = openStep === step.slug
-        const groups = GROUPS[step.slug] || { artefacts: [], deliverables: [] }
+        const groups = GROUPS[step.slug] ?? { artefacts: [] as RefId[], deliverables: [] as RefId[] }
 
         return (
           <div key={step.slug} className={`nav-item ${isActive ? 'active' : ''}`}>
@@ -83,14 +177,12 @@ export default function StepNav() {
               <span className="chev">{isOpen ? '▾' : '▸'}</span>
             </button>
 
-            {/* Small link to open the step page (optional) */}
             {isOpen && (
               <div className="nav-open-link">
                 <Link to={`/steps/${step.slug}`}>Open step</Link>
               </div>
             )}
 
-            {/* Second layer: Artefacts / Deliverables */}
             {isOpen && (
               <div className="nav-groups">
                 {/* Artefacts */}
@@ -108,7 +200,7 @@ export default function StepNav() {
 
                     {openGroup[step.slug] === 'artefacts' && (
                       <ul className="group-list">
-                        {groups.artefacts.map(id => (
+                        {groups.artefacts.map((id: RefId) => (
                           <li key={id}>
                             <button
                               type="button"
@@ -140,7 +232,7 @@ export default function StepNav() {
 
                     {openGroup[step.slug] === 'deliverables' && (
                       <ul className="group-list">
-                        {groups.deliverables.map(id => (
+                        {groups.deliverables.map((id: RefId) => (
                           <li key={id}>
                             <button
                               type="button"

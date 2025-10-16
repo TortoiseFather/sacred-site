@@ -46,6 +46,8 @@ implementationMd: `**Inputs**: route name, public docs, stakeholder list.\n\n**D
   { id: 'd',  label: 'Artefact D',     kind: 'info', x: 715, y: 1,   w: 96,  h: 59 },
 
     // Sub-steps (rectangles) → inline detailed info (markdown, with cross-links)
+    { id: '1-e', label: '1.Extra - ODMology',         kind: 'link', navigateTo: '/steps/1-concept-assurance/examples/1-e', x: 0, y: 0, w: 0, h: 0 },
+    { id: '1.1-e', label: '1.Extra - On Ecosystems',         kind: 'link', navigateTo: '/steps/1-concept-assurance/examples/1.1-e', x: 0, y: 0, w: 0, h: 0 }, 
     { id: '1-1', label: '1.1 SotA Comparison',         kind: 'link', navigateTo: '/steps/1-concept-assurance/examples/1-1', x: 229, y: 200, w: 111, h: 59 },
     { id: '1-2', label: '1.2 Mission Statement',       kind: 'link', navigateTo: '/steps/1-concept-assurance/examples/1-2', x: 359, y: 200, w: 120, h: 59 },
     { id: '1-3', label: '1.3 Top-level Domain Model',  kind: 'link', navigateTo: '/steps/1-concept-assurance/examples/1-3', x: 494, y: 200, w: 120, h: 59 },
@@ -119,6 +121,9 @@ title: 'Metrics that Matter',
 slug: '4-metrics',
 summary: 'Define CSO/SOC/OSM metrics to monitor and control safety, aligned to the operation states.',
 diagramSrc: 'diagrams/Step-4.svg',
+subHotspots: [
+    { id: '4-e', label: '4.Extra - Milestones',         kind: 'link', navigateTo: '/steps/4-metrics/examples/4-e', x: 0, y: 0, w: 0, h: 0 },
+],
 implementationMd: `**Do**:\n- Specify Context of Safe Operation (CSO) variables.\n- Compose Safe Operating Contexts (SOC) from CSO thresholds.\n- Define Operational Support Metrics (OSM) for runtime monitoring.\n\n**Outputs**: Metrics catalogue with thresholds & rationale.`,
 },
 {
@@ -127,6 +132,9 @@ title: 'Failure Management',
 slug: '5-safety-actualisation',
 summary: 'Declare what “failure” means early, design mitigations, and define minimum-risk states and transitions.',
 diagramSrc: 'diagrams/step-5.svg',
+subHotspots: [
+  {id: '5-e', label: '5.Extra TRAP Analysis', kind: 'link', navigateTo: 'steps/5-safety-actualisation/examples/5-e', x:0, y:0, w:0, h:0}
+],
 implementationMd: `**Do**:\n- Enumerate failure modes & detection logic.\n- Define MRS (Minimum-Risk State) triggers & behaviours.\n- Align with ecosystem procedures (signaller comms, station ops).\n\n**Outputs**: Failure-handling playbook & state diagrams.`,
 },
 {
