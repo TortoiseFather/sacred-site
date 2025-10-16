@@ -152,6 +152,10 @@ export const citations: Record<string, CitationEntry> = {
     id:'35',
     text:'Maintaining Railway Safety in an Ever-Changing World, Peter Sheppard, Ross Dunsford 2024 https://doi.org/10.1080/09617353.2023.2289322'
   },
+  '36':{
+    id:'36',
+    text:'A new index to evaluate the safety performance level of railway transportation systems, Valentino Sangiorgio, Agostino Marcello Mangini, Ilario Precchiazzi'
+  },
   '40': {
     id: '40',
     text: 'Benerecetti et al., Dynamic State Machines for Modelling Railway Control Systems (2019)'

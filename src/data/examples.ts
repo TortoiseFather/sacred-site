@@ -40,6 +40,9 @@ export const examplesByStep: ExamplesByStep = {
     '1.1-e':{
       title:'The Ecosystem'
     },
+    '1.2-e':{
+      title:'The Safe Operating Context'
+    },
 
     // ───────────────────────── DELIVERABLES / ARTEFACTS (inline panels via ref:…) ─────────────────────────
     d1: {

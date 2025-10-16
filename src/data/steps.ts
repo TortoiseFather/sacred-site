@@ -33,7 +33,7 @@ implementationMd: `**Inputs**: route name, public docs, stakeholder list.\n\n**D
   number: 1,
   title: 'Concept Assurance',
   slug: '1-concept-assurance',
-  summary: 'Establish the conceptual foundation for a given railway system or route. Moving from understanding the wider state of the art (SotA) and existing systems, into defining the mission statement and intended purpose of the proposed system, then into scoping the operational area, culminating in a scenario definition that expresses how the system is expected to behave within that area. Step 1 is about finding the correct questions to answer and in summary, assuring the given concept.',
+  summary: 'Establish the conceptual foundation for a given railway system or route. Moving from understanding the wider state of the art (SotA) and existing systems, into defining the mission statement and intended purpose of the proposed system, then into scoping the operational area, culminating in a scenario definition that expresses how the system is expected to behave within that area. Step 1 is about finding the correct questions to answer and in summary, assuring the given concept, culminating in the production of an initial [ODM](#/steps/1-concept-assurance/examples/1-e).',
   subDiagramSrc: 'diagrams/step-1.svg',
   subHotspots: [
     // Inputs/deliverables (parallelograms) → link to example pages
@@ -48,11 +48,12 @@ implementationMd: `**Inputs**: route name, public docs, stakeholder list.\n\n**D
     // Sub-steps (rectangles) → inline detailed info (markdown, with cross-links)
     { id: '1-e', label: '1.Extra - ODMology',         kind: 'link', navigateTo: '/steps/1-concept-assurance/examples/1-e', x: 0, y: 0, w: 0, h: 0 },
     { id: '1.1-e', label: '1.Extra - On Ecosystems',         kind: 'link', navigateTo: '/steps/1-concept-assurance/examples/1.1-e', x: 0, y: 0, w: 0, h: 0 }, 
+    { id: '1.2-e', label: '1.Extra - The Safe Operating Context',         kind: 'link', navigateTo: '/steps/1-concept-assurance/examples/1.2-e', x: 0, y: 0, w: 0, h: 0 }, 
     { id: '1-1', label: '1.1 SotA Comparison',         kind: 'link', navigateTo: '/steps/1-concept-assurance/examples/1-1', x: 229, y: 200, w: 111, h: 59 },
     { id: '1-2', label: '1.2 Mission Statement',       kind: 'link', navigateTo: '/steps/1-concept-assurance/examples/1-2', x: 359, y: 200, w: 120, h: 59 },
     { id: '1-3', label: '1.3 Top-level Domain Model',  kind: 'link', navigateTo: '/steps/1-concept-assurance/examples/1-3', x: 494, y: 200, w: 120, h: 59 },
   ],
-  implementationMd: `Use interviews + document reviews to define stakeholders, assumptions and an initial ODM/SOC sketch. Produce D2 in MoSCoW and record the boundary conditions that shape Step 2 hazards and Step 6 assurance.`,
+  implementationMd: `Use interviews + document reviews to define stakeholders, assumptions and an initial [ODM](#/steps/1-concept-assurance/examples/1-e)/[SOC](#/steps/1-concept-assurance/examples/1.2-e) sketch. Produce D2 in MoSCoW and record the boundary conditions that shape Step 2 hazards and Step 6 assurance.`,
 },
 
 
