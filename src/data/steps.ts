@@ -49,6 +49,7 @@ implementationMd: `**Inputs**: route name, public docs, stakeholder list.\n\n**D
     { id: '1-e', label: '1.Extra - ODMology',         kind: 'link', navigateTo: '/steps/1-concept-assurance/examples/1-e', x: 0, y: 0, w: 0, h: 0 },
     { id: '1.1-e', label: '1.Extra - On Ecosystems',         kind: 'link', navigateTo: '/steps/1-concept-assurance/examples/1.1-e', x: 0, y: 0, w: 0, h: 0 }, 
     { id: '1.2-e', label: '1.Extra - The Safe Operating Context',         kind: 'link', navigateTo: '/steps/1-concept-assurance/examples/1.2-e', x: 0, y: 0, w: 0, h: 0 }, 
+    { id: '1.3-e', label: '1.Extra - The Context of Safe Operation',         kind: 'link', navigateTo: '/steps/1-concept-assurance/examples/1.3-e', x: 0, y: 0, w: 0, h: 0 }, 
     { id: '1-1', label: '1.1 SotA Comparison',         kind: 'link', navigateTo: '/steps/1-concept-assurance/examples/1-1', x: 229, y: 200, w: 111, h: 59 },
     { id: '1-2', label: '1.2 Mission Statement',       kind: 'link', navigateTo: '/steps/1-concept-assurance/examples/1-2', x: 359, y: 200, w: 120, h: 59 },
     { id: '1-3', label: '1.3 Top-level Domain Model',  kind: 'link', navigateTo: '/steps/1-concept-assurance/examples/1-3', x: 494, y: 200, w: 120, h: 59 },
