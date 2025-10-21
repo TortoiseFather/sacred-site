@@ -150,6 +150,39 @@ export const examplesByStep: ExamplesByStep = {
       },
     },
     '4-metrics':{
+      '4-1':{
+        title:'Requirement to Metric Translation'
+      },
+      '4-2':{
+        title:'Operational Metric Definition'
+      },
+      '4-3':{
+        title:'Envrionmental Metric Definition'
+      },
+      '4-4':{
+        title:'Context Calibration'
+      },
+      '4-5':{
+        title:'Verification or Iteration'
+      },
+      'd11':{
+        title:'System-Specific Metrics'
+      },
+      'd12':{
+        title:'Route-Specific Metrics'
+      },
+      'd13':{
+        title:'Unified Metrics'
+      },
+      'd14':{
+        title:'Criticality Determination'
+      },
+      '4.1-e':{
+        title:'Top Level Hazard Analysis.'
+      },
+      'd15':{
+        title:'HAZOP'
+      },
       '4-e':{
         title:'Milestones'
       }
