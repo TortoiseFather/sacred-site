@@ -55,6 +55,14 @@ const GROUPS: Record<
     artefacts: ['e'],
     deliverables: ['d3', 'd4', 'd5', 'd6', 'd7'],
   },
+  '3-requirements':{
+    artefacts:['f','g'],
+    deliverables:['d8','d9','d10']
+  },
+  '4-metrics':{
+    artefacts:['n/a.'],
+    deliverables:['d11','d12','d13','d14','d15']
+  }
   // add more as needed...
 }
 

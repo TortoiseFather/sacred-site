@@ -95,17 +95,16 @@ implementationMd: `**Inputs**: route name, public docs, stakeholder list.\n\n**D
 number: 3,
 title: 'Requirements Capturing & Assurance',
 slug: '3-requirements',
-summary: 'Validate hazards and derive verifiable requirements that tie back to the ODM and stakeholders.',
+summary: 'Right now, the ODM is a list of features which classify as hazards that exist within an environment. It is verified in that we understand that the elements do exist within the environment, through the identification of components through [D6](ref:d6), step 3 as a whole, seeks to validate the hazards by ensuring they align with the initial scenario definition [D1](ref:d1), ensuring that they can be mitigated to some degree, listing the requirements, identifying if these requirements exist within the ODM, discovering the limitations of the ODM and analysing SotA to see if we understand these limitations fully.',
 subDiagramSrc: 'diagrams/step-3.svg',
 subHotspots: [
         { id: 'd5', label: 'Deliverable D5', kind: 'info', x: 0,   y: 0, w: 120, h: 61 },
-        { id: 'd1', label: 'Deliverable D1', kind: 'info', x: 130, y: 0, w: 120, h: 61 },
         { id: 'd7', label: 'Deliverable D7', kind: 'info', x: 420,y:0, w: 120, h: 61},
-        { id: 'd7', label: 'Deliverable D7', kind: 'info', x: 730,y:269, w: 120, h: 61},
+        { id: 'd7', label: 'Deliverable D7', kind: 'info', x: 130,y:0, w: 120, h: 61},
         { id: 'd8',  label: 'Deliverable D8',     kind: 'info', x: 200, y: 268, w: 120, h: 61  },
         { id: 'd9',  label: 'Deliverable D9',     kind: 'info', x: 500, y: 268,   w: 120,  h: 61 },
-        { id: 'f',  label: 'Artefact F',     kind: 'info', x: 668, y: 0,   w: 80,  h: 62 },
-        { id: 'g',  label: 'Artefact G',     kind: 'info', x: 810, y: 0,   w: 80,  h: 62 },
+        { id: 'f',  label: 'Artefact F',     kind: 'info', x: 270, y: 0,   w: 80,  h: 62 },
+        { id: 'g',  label: 'Artefact G',     kind: 'info', x: 410, y: 0,   w: 80,  h: 62 },
         { id: 'd10',  label: 'Deliverable D10',     kind: 'info', x: 951, y: 158,   w: 120,  h: 61 },
 
           // Sub-steps (rectangles) → inline detailed info (markdown, with cross-links)
