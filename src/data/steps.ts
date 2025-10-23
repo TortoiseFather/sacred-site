@@ -101,6 +101,7 @@ subHotspots: [
         { id: 'd5', label: 'Deliverable D5', kind: 'info', x: 0,   y: 0, w: 120, h: 61 },
         { id: 'd7', label: 'Deliverable D7', kind: 'info', x: 420,y:0, w: 120, h: 61},
         { id: 'd7', label: 'Deliverable D7', kind: 'info', x: 130,y:0, w: 120, h: 61},
+        { id: 'd7', label: 'Deliverable D7', kind: 'info', x: 730,y:270, w: 120, h: 61},
         { id: 'd8',  label: 'Deliverable D8',     kind: 'info', x: 200, y: 268, w: 120, h: 61  },
         { id: 'd9',  label: 'Deliverable D9',     kind: 'info', x: 500, y: 268,   w: 120,  h: 61 },
         { id: 'f',  label: 'Artefact F',     kind: 'info', x: 270, y: 0,   w: 80,  h: 62 },

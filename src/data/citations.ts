@@ -160,6 +160,10 @@ export const citations: Record<string, CitationEntry> = {
     id:'37',
     text:'Milestone Determination for Autonomous Railway Operation, Josh Hunter, John McDermid, Simon Burton, Poppy Fynes, Mia Dempster. https://arxiv.org/abs/2510.06229'
   },
+  '38':{
+    id:'38',
+    text:'https://www.routereports.com/case-study/seasonal-intelligence-platform'
+  },
   '40': {
     id: '40',
     text: 'Benerecetti et al., Dynamic State Machines for Modelling Railway Control Systems (2019)'
@@ -171,5 +175,9 @@ export const citations: Record<string, CitationEntry> = {
   'SOCNote':{
     id:'SOC',
     text:'There is a lot of nuance in the SOC which will be covered throughout the SACRED methodology, as a note for the examples, communication is key in the event of a shifting internal speed limit, due to the safety criticality of timetabling, in general, the communication of intent is extremely relevant within SACRED step 6.'
+  },
+  'MilestoneNote':{
+    id:'Milestone Note:',
+    text:'Of course, in reality there would likely be a seperate state for "signal approach" which would have a milestone correlated with actual geographical location, however for this simplified example we aren\'t discussing that here.'
   }
 }
