@@ -188,6 +188,18 @@ export const examplesByStep: ExamplesByStep = {
       }
     },
     '5-safety-actualisation':{
+      '5-1':{
+        title:'Failure Trigger Detection'
+      },
+      '5-2':{
+        title:'Minimum Risk State Determination'
+      },
+      '5-3':{
+        title:'TRAP Analysis'
+      },
+      'd16':{
+        title:'Hazardous Failure Argument'
+      },
       '5-e':{
         title:'TRAP Paradigm'
       },
