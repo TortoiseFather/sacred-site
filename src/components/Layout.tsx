@@ -15,7 +15,7 @@ return (
 {children}
 </main>
 <footer>
-<div className="container">© {new Date().getFullYear()} All rights reserved, 'The Cafe' 2020-2025.</div>
+<div className="container">© {new Date().getFullYear()} All rights reserved, 'The Cafe' 2020-2025.  <Link to="/contact">Contact</Link></div>
 </footer>
 </div>
 )
