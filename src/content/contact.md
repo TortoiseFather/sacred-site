@@ -1,8 +1,4 @@
----
-SACRED Methodology - Josh Hunter, Ferroequinologist, University of York
----
-
-
+SACRED Methodology - Josh Hunter, Ferroequinologist, University of York.
 
 If you are contacting me about SACRED in an academic or industrial context, it helps to include:
 
@@ -22,8 +18,11 @@ If you are proposing a collaboration or talk, please suggest:
 - Expected audience (technical / non-technical / mixed)  
 - Indicative dates or timeframe  
 
+## Socials
+
 
 **Email:** Josh.hunter@york.ac.uk
+
 **Telephone number:** +44 7951 190007
 
 
@@ -31,6 +30,4 @@ If you are proposing a collaboration or talk, please suggest:
 
 **LinkedIn**<a href="https://www.linkedin.com/in/josh-hunter-pgr/">@Josh-Hunter-Pgr</a>
 
-**Bluesky:** <a href="https://bsky.app/profile/lovelykohai.bsky.social">@LovelyKohai</a>
-
-[Home](/)
+**Bluesky:** <a href="https://www.bsky.app/profile/lovelykohai.bsky.social/">@LovelyKohai</a>
