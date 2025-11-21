@@ -49,22 +49,22 @@ export const examplesByStep: ExamplesByStep = {
 
     // ───────────────────────── DELIVERABLES / ARTEFACTS (inline panels via ref:…) ─────────────────────────
     d1: {
-      title: 'Deliverable D1 – Scenario Definition (Initial)',
+      title: 'Scenario Definition (Initial)',
     },
     d2: {
-      title: 'Deliverable D2 – MoSCoW Structure',
+      title: 'MoSCoW Structure',
 },
     a: {
-      title: 'Artefact A – State of the Art (SotA)',
+      title: 'State of the Art (SotA)',
     },
     b: {
-      title: 'Artefact B – Initial ODM',
+      title: 'Initial ODM',
     },
     c: {
-      title: 'Artefact C – Initial SOC',
+      title: 'Initial SOC',
     },
     d: {
-      title: 'Artefact D – Area of Operation',
+      title: 'Area of Operation',
 
     },
     e2: {
@@ -206,8 +206,32 @@ export const examplesByStep: ExamplesByStep = {
     },
     '6-design-assurance':{
       '6-1': {
-      title: 'six point one',
-    }
+      title: 'Technology Scoping',
+      },
+      '6-2': {
+      title: 'SotA TRAP',
+      },
+      '6-3': {
+      title: 'Operational State Validation',
+      },
+      '6-4': {
+      title: 'Simulation and Experimentation',
+      },
+      '6-5': {
+      title: 'Boundary Definition',
+      },
+      '6-6': {
+      title: 'Restriction or continuation?',
+      },
+      'd17': {
+      title: 'AS Development Log',
+      },
+      'd18': {
+      title: 'AS Design Justification',
+      },
+      'd19': {
+      title: 'Limitation Report',
+      },
     }
 }
 

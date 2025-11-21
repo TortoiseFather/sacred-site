@@ -62,8 +62,19 @@ const GROUPS: Record<
   '4-metrics':{
     artefacts:['n/a.'],
     deliverables:['d11','d12','d13','d14','d15']
+  },
+  '5-safety-actualisation':{
+    artefacts:['d7','d10','d15'],
+    deliverables:['d16']
+  },
+  '6-design-assurance':{
+    artefacts:['a','d9','d10','d16'],
+    deliverables:['d17','d18','d19']
+  },
+  '7-soc':{
+    artefacts:['n/a.'],
+    deliverables:['n/a']
   }
-  // add more as needed...
 }
 
 /** Helpers */
