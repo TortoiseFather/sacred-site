@@ -179,5 +179,49 @@ export const citations: Record<string, CitationEntry> = {
   'MilestoneNote':{
     id:'Milestone Note:',
     text:'Of course, in reality there would likely be a seperate state for "signal approach" which would have a milestone correlated with actual geographical location, however for this simplified example we aren\'t discussing that here.'
+  },
+  '41':{
+    id:'41',
+    text:'Kyriakidis, M., Hirsch, R., Majumdar, A. Metro railway safety: An analysis of accident precursors. Safety Science, 2012.'
+  },
+  '42':{
+    id:'42',
+    text:'SPARK, RSSB. Measuring Safety Performance. 2019.'
+  },
+  '43':{
+    id:'43',
+    text:'Fenelon, P., McDermid, J.A., Nicolson, M., Pumfrey, D.J. Towards integrated safety analysis and design. ACM SIGAPP Applied Computing Review, 1994.'
+  },
+  '44':{
+    id:'44',
+    text:'Kotek, L., Tabas, M. HAZOP Study with Qualitative Risk Analysis for Prioritization of Corrective and Preventive Actions. Procedia Engineering, 2012.'
+  },
+  '45':{
+    id:'45',
+    text:'Safety Analysis of Autonomous Railway Systems: An Introduction to the SACRED Methodology'
+  },
+  '46':{
+    id:'46',
+    text:'Ribeiro, Q., Ribeiro, M., Castro, J. Requirements Engineering for Autonomous Vehicles: A Systematic Literature Review. ACM, 2022.'
+  },
+  '47':{
+    id:'47',
+    text:'Delorme, F. SNCF Rail Safety and the Fourth Industrial Revolution. 2019.'
+  },
+  '48':{
+    id:'48',
+    text:'IEC 62290-1. Railway applications – Urban guided transport management and command/control systems. 2006'
+  },
+  'Incident Data':{
+    id:'note1',
+    text:'For example, data provided by the RAIB'
+  },
+  '49':{
+    id:'49',
+    text:'Berger, I., Rieke, R., Kolomeets, M., Chechulin, A., Kotenko, I. Comparative Study of ML Methods for In-Vehicle Intrusion Detection. Springer, 2019.'
+  },
+  '50':{
+    id:'50',
+    text:'Guidance on the Assurance of Machine Learning in Autonomous Systems (AMLAS) Richard Hawkins, Colin Paterson, Chiara Picardi, Yan Jia, Radu Calinescu, Ibrahim Habli'
   }
 }
