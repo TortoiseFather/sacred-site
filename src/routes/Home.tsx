@@ -4,7 +4,7 @@ import SvgHotspots from '../components/SvgHotspots'
 import StepNav from '../components/StepNav'
 import { renderBlock } from '../lib/md'
 import type { Secondary } from '../components/SvgHotspots'
-import RefPanelSlot from '../components/RefPanelSlot'   // ⬅ add this
+import RefPanelSlot from '../components/RefPanelSlot'   
 
 export default function Home() {
   const [secondary, setSecondary] = useState<Secondary | null>(null)
@@ -28,7 +28,7 @@ export default function Home() {
             <SvgHotspots onSecondarySelect={setSecondary} />
           </div>
 
-          {/* ⬇️ show the same side panel used on step pages */}
+          {}
           <RefPanelSlot />
 
           {secondary && (

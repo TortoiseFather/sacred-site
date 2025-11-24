@@ -1,10 +1,10 @@
 export type CitationEntry = {
-  id: string              // "30"
-  text: string            // display text
+  id: string 
+  text: string     
   authors?: string
   year?: string
   venue?: string
-  url?: string            // optional: doi or link
+  url?: string         
 }
 
 export const citations: Record<string, CitationEntry> = {

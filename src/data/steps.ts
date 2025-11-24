@@ -6,10 +6,10 @@ export type Step = {
   title: string
   slug: string
   summary: string
-  diagramSrc?: string         // (used on home if you want)
-  subDiagramSrc?: string      // shown at top of step page
+  diagramSrc?: string      
+  subDiagramSrc?: string      
   implementationMd: string
-  subHotspots?: SubHotspot[]   // <-- use the exported type here
+  subHotspots?: SubHotspot[]  
   next?: { slug: string; number: number; title: string }
 }
 
@@ -108,7 +108,6 @@ subHotspots: [
         { id: 'g',  label: 'Artefact G',     kind: 'info', x: 410, y: 0,   w: 80,  h: 62 },
         { id: 'd10',  label: 'Deliverable D10',     kind: 'info', x: 951, y: 158,   w: 120,  h: 61 },
 
-          // Sub-steps (rectangles) → inline detailed info (markdown, with cross-links)
           { id: '3-1', label: '3.1 Hazard Validation',         kind: 'link', navigateTo: '/steps/3-requirements/examples/3-1', x: 200, y: 158, w: 122, h: 62 },
           { id: '3-2', label: '3.2 Mitigation Review',       kind: 'link', navigateTo: '/steps/3-requirements/examples/3-2', x: 350, y: 158, w: 122, h: 62 },
           { id: '3-3', label: '3.3 Requirements Encapsulation',  kind: 'link', navigateTo: '/steps/3-requirements/examples/3-3', x: 499, y: 158, w: 122, h: 62 },
@@ -196,8 +195,6 @@ implementationMd: `**Do**:\n- Consolidate metric thresholds into operational gua
 },
 ]
 
-
-// simple helpers
 export function getStepBySlug(slug: string) {
 return steps.find(s => s.slug === slug)
 }

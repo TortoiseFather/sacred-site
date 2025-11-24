@@ -18,7 +18,6 @@ interface SubHotspot {
   y: number
   w: number
   h: number
-  /** Optional flag if you ever want explicit dictionary tagging */
   isDictionary?: boolean
 }
 

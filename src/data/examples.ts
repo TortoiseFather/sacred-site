@@ -46,8 +46,6 @@ export const examplesByStep: ExamplesByStep = {
     '1.3-e':{
       title:'The Context of Safe Operation'
     },
-
-    // ───────────────────────── DELIVERABLES / ARTEFACTS (inline panels via ref:…) ─────────────────────────
     d1: {
       title: 'Scenario Definition (Initial)',
     },

@@ -3,7 +3,7 @@ import type { CitationEntry } from '../data/citations'
 
 export type CitePanelState = {
   entry: CitationEntry | null
-  at: { x: number; y: number } | null   // viewport coords for popover
+  at: { x: number; y: number } | null   // ts does nothing
 }
 
 export type CiteCtxType = {
