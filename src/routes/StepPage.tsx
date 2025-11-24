@@ -5,7 +5,7 @@ import StepNav from '../components/StepNav'
 import { steps, getStepBySlug } from '../data/steps'
 import SubDiagram from '../components/SubDiagram'
 import RefPanelSlot from '../components/RefPanelSlot'
-import { renderBlock } from '../lib/md'   // <-- use your md helper
+import { renderBlock } from '../lib/md'   
 
 export default function StepPage() {
   const { slug } = useParams()
