@@ -230,6 +230,9 @@ export const examplesByStep: ExamplesByStep = {
       'd19': {
       title: 'Limitation Report',
       },
+      '6-e':{
+        title: 'OpenBVE'
+      }
     }
 }
 

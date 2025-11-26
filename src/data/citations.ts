@@ -223,5 +223,33 @@ export const citations: Record<string, CitationEntry> = {
   '50':{
     id:'50',
     text:'Guidance on the Assurance of Machine Learning in Autonomous Systems (AMLAS) Richard Hawkins, Colin Paterson, Chiara Picardi, Yan Jia, Radu Calinescu, Ibrahim Habli'
+  },
+  '51':{
+    id:'51',
+    text:'Leezer3 and the BVE Team - OpenBVE - https://github.com/leezer3/OpenBVE/'
+  },
+  '52':{
+    id:'52',
+    text:'https://github.com/TortoiseFather/OpenBVE-ML-Plugins'
+  },
+  '53':{
+    id:'53',
+    text:'You Only Look Once: Unified, Real-Time Object Detection Joseph Redmon, Santosh Divvala, Ross Girshick, Ali Farhadi  	arXiv:1506.02640'
+  },
+  '54':{
+    id:'54',
+    text:'Dwyer, B., Nelson, J., Hansen, T., et al. (2025). Roboflow (Version 1.0) [Software]. Available from https://roboflow.com. Computer vision.'
+  },
+  '55':{
+    id:'55',
+    text:'Roboflow railway example, averaging 46\% recall. https://universe.roboflow.com/goal-lmqiu/railway-tfabb'
+  },
+  'Railvision':{
+    id:'railvision',
+    text:'https://railvision.io/'
+  },
+  '56':{
+    id:'56',
+    text:' Dist-YOLO: Fast Object Detection with Distance Estimation  Marek Vajgl, Petr Hurtik and Tomáš Nejezchleba https://doi.org/10.3390/app12031354'
   }
 }

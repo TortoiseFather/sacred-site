@@ -174,7 +174,7 @@ subHotspots: [
   {id: '6-4', label: '6.4 Simulation and Experimentation', kind: 'link', navigateTo: 'steps/6-design-assurance/examples/6-4', x:460, y:140, w:121, h:61},
   {id: '6-5', label: '6.5 Boundary Definition', kind: 'link', navigateTo: 'steps/6-design-assurance/examples/6-5', x:609, y:140, w:121, h:61},
   {id: '6-6', label: '6.6 Restriction or continuation', kind: 'link', navigateTo: 'steps/6-design-assurance/examples/6-6', x:780, y:140, w:121, h:61},
-  {id: '5-e', label: '6.Extra', kind: 'link', navigateTo: 'steps/6-design-assurance/examples/6-e', x:0, y:0, w:0, h:0},
+  {id: '6-e', label: '6.Extra OpenBVE', kind: 'link', navigateTo: 'steps/6-design-assurance/examples/6-e', x:0, y:0, w:0, h:0},
   { id: 'd16',  label: 'Deliverable D16',     kind: 'info', x: 130, y: 0,   w: 121,  h: 61 },
   { id: 'a',  label: 'Artefact A',     kind: 'info', x: 0, y: 0,   w: 118,  h: 60 },
   { id: 'd10',  label: 'Deliverable D10',     kind: 'info', x: 610, y: 0,   w: 121,  h: 61 },

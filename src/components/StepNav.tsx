@@ -28,13 +28,7 @@ interface Step {
   subHotspots?: SubHotspot[]
 }
 
-/** Strongly-typed steps (no `any`) */
 const steps = rawSteps as Step[]
-
-/**
- * Configure which refs belong to which group per step.
- * Add more steps as you flesh them out.
- */
 const GROUPS: Record<
   string,
   {
@@ -51,15 +45,15 @@ const GROUPS: Record<
     deliverables: ['d1', 'd2'],
   },
   '2-hazard-identification': {
-    artefacts: ['e'],
+    artefacts: ['b','c','e'],
     deliverables: ['d3', 'd4', 'd5', 'd6', 'd7'],
   },
   '3-requirements':{
-    artefacts:['f','g'],
+    artefacts:['d5','d7','f','g'],
     deliverables:['d8','d9','d10']
   },
   '4-metrics':{
-    artefacts:['n/a.'],
+    artefacts:['d6','d8','d10'],
     deliverables:['d11','d12','d13','d14','d15']
   },
   '5-safety-actualisation':{
@@ -93,7 +87,7 @@ type DictItem = {
   to: string
 }
 
-/** Type guard for a dictionary hotspot (your `^\d+-e$` rule) */
+/** Type guard for a dictionary hotspot */
 const isDictionaryId = (id: string) => /^\d+(?:\.\d+)*-e$/.test(id)
 
 export default function StepNav() {
@@ -119,7 +113,7 @@ export default function StepNav() {
     setOpenGroup(g => ({ ...g, [slug]: g[slug] === group ? null : group }))
   }
 
-  // Collect dictionary pages once (typed, no `any`)
+  // Collect dictionary pages once
   const dictionaryItems = useMemo<DictItem[]>(() => {
     const items: DictItem[] = []
     for (const step of steps) {
