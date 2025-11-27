@@ -191,10 +191,14 @@ export default function StepNav() {
 
             {isOpen && (
               <div className="nav-open-link">
-                <Link to={`/steps/${step.slug}`}>Open step</Link>
+                <Link
+                  to={`/steps/${step.slug}`}
+                  className="open-step-btn"
+                >
+                  Open step
+                </Link>
               </div>
             )}
-
             {isOpen && (
               <div className="nav-groups">
                 {/* Artefacts */}

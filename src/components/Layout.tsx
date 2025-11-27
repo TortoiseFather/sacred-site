@@ -30,11 +30,14 @@ return (
   style={{ backgroundColor: '#f4f4f8ff' }}
 >
   <div className="footer-grid">
-    <span>© {new Date().getFullYear()} All rights reserved</span>
-    <span>'The Cafe' 2020–2025</span>
-    <Link to="/contact">Contact me.</Link>
+    <span className="footer-left">© {new Date().getFullYear()} All rights reserved</span>
+    <span className="footer-center">'The Cafe' 2020–2025</span>
+    <Link className="footer-right" to="/contact">Contact me.</Link>
   </div>
 </footer>
+
+
+
 </div>
 )
 }

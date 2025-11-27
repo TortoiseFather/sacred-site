@@ -28,6 +28,6 @@ If you are proposing a collaboration or talk, please suggest:
 
 **GitHub:** <a href="https://github.com/TortoiseFather/">@TortoiseFather</a>
 
-**LinkedIn**<a href="https://www.linkedin.com/in/josh-hunter-pgr/">@Josh-Hunter-Pgr</a>
+**LinkedIn:** <a href="https://www.linkedin.com/in/josh-hunter-pgr/">@Josh-Hunter-Pgr</a>
 
-**Bluesky:** <a href="https://www.bsky.app/profile/lovelykohai.bsky.social/">@LovelyKohai</a>
+**Bluesky:** <a href="https://bsky.app/profile/lovelykohai.bsky.social">@LovelyKohai</a>

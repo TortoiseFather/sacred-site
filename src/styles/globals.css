@@ -170,12 +170,31 @@ footer { border-top:1px solid #e5e7eb; padding:16px 0; margin-top:32px; color:va
 }
 
 .step-nav .nav-open-link {
-  padding: 6px 12px 0 12px;
+  padding: 6px 12px 4px;
+}
+
+.step-nav .open-step-btn {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  border: 1px solid #f9fafb;
+  background: #f9fafb;
+  color: #ffffff;
+  font-size: 0.9rem;
+  box-shadow: 0 1px 0 rgba(0,0,0,.04);
+}
+
+.step-nav .open-step-btn:hover {
+  text-decoration: none;
+  background: #a0a5aa;
 }
 
 .step-nav .nav-open-link a {
   font-size: 12px;
-  color: #2563eb;
+  color: #000000;
 }
 
 .step-nav .nav-groups {
@@ -187,15 +206,29 @@ footer { border-top:1px solid #e5e7eb; padding:16px 0; margin-top:32px; color:va
 
 .step-nav .group-toggle {
   width: 100%;
-  text-align: left;
-  padding: 6px 8px;
-  background: #f9fafb;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
+  padding: 4px 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #4b5563;        /* muted text */
+  cursor: pointer;
 }
+
+.step-nav .group-toggle:hover {
+  background: #f3f4f6;
+  border-radius: 6px;
+}
+
+.step-nav .group-toggle .chev {
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
 
 .step-nav .group-list {
   list-style: none;
@@ -254,34 +287,43 @@ footer { border-top:1px solid #e5e7eb; padding:16px 0; margin-top:32px; color:va
   width: 100%;
   border-top: 1px solid #e5e7eb;
   padding: 16px 0;
-  background: #fff;
-}
-
-.footer-grid {
-  display: grid;
-  width: 100%;
-  max-width: none;
-  margin: 0 auto;
-  padding: 0 24px;
-
-  grid-template-columns: repeat(6, 1fr);
-  align-items: center;
+  background: #fff; /* inline style overrides colour */
   color: var(--muted);
 }
 
-.footer-grid > *:nth-child(1) {
-  grid-column: 1 / 3; 
+/* 60% wide, centred horizontally → edges at 20% and 80% */
+.footer-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+  margin: 0 auto;     /* center the 60% container */
 }
 
-.footer-grid > *:nth-child(2) {
-  grid-column: 3 / 4;  
-  text-align: center;
+/* optional: small text tweaks */
+.footer-left,
+.footer-center,
+.footer-right {
+  font-size: 0.9rem;
 }
 
-.footer-grid > *:nth-child(3) {
-  grid-column: 4 / 6;  
-  text-align: right;
+.footer-right a,
+.footer-right {
+  text-decoration: none;
 }
+.footer-right a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive: on very small screens, let it use full width so it doesn't crush */
+@media (max-width: 640px) {
+  .footer-grid {
+    width: 100%;
+    padding: 0 16px;
+  }
+}
+
+
 html, body {
   height: 100%;
 }
