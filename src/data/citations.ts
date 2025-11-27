@@ -251,5 +251,34 @@ export const citations: Record<string, CitationEntry> = {
   '56':{
     id:'56',
     text:' Dist-YOLO: Fast Object Detection with Distance Estimation  Marek Vajgl, Petr Hurtik and Tomáš Nejezchleba https://doi.org/10.3390/app12031354'
-  }
+  },
+  '57': {
+  id: '57',
+  text: 'RSSB. GERT8000-S5 Module S5: Passing a Signal at Danger with Authority (Issue 1). Available at: https://www.rssb.co.uk/standards-catalogue/CatalogueItem/GERT8000-S5-Iss-1.'
+},
+'58': {
+  id: '58',
+  text: 'RAIB Report R052025. Redcar Level Crossing Incident (2025). Available at: https://assets.publishing.service.gov.uk/media/67ed3c5ce9c76fa33048c684/R052025_250403_Redcar.pdf.'
+},
+'59': {
+  id: '59',
+  text: 'RSSB. GERT8000-S5 Module S5: Passing a Signal at Danger with Authority (Issue 2). Available at: https://www.rssb.co.uk/standards-catalogue/CatalogueItem/GERT8000-S5-Iss-2.'
+},
+'60': {
+  id: '60',
+  text: 'RAIB Report R182011. Stonegate SPAD Incident (2011). Available at: https://assets.publishing.service.gov.uk/media/5a7f5377e5274a2e8ab4b7ed/111117_R182011_Stonegate.pdf.'
+},
+'61': {
+  id: '61',
+  text: 'Office of Rail and Road (ORR). Rail Safety: Quality and Methodology Report (2024).'
+},
+'62': {
+  id: '62',
+  text: 'Office of Rail and Road. Rail Safety Statistics Portal. Available at: https://dataportal.orr.gov.uk/statistics/health-and-safety/rail-safety/.'
+},
+'63': {
+  "id": "63",
+  "text": "Sadiq, S., Sadiq, W., & Orlowska, M. (2001). Pockets of Flexibility in Workflow Specification. In ER 2001: Conceptual Modeling (pp. 513–526). Springer.",
+}
+
 }

@@ -154,6 +154,7 @@ subHotspots: [
   {id: '5-2', label: '5.2 Minimum Risk State Determination', kind: 'link', navigateTo: 'steps/5-safety-actualisation/examples/5-2', x:410, y:140, w:121, h:61},
   {id: '5-3', label: '5.3 TRAP Analysis', kind: 'link', navigateTo: 'steps/5-safety-actualisation/examples/5-3', x:580, y:140, w:121, h:61},
   {id: '5-e', label: '5.Extra TRAP Analysis', kind: 'link', navigateTo: 'steps/5-safety-actualisation/examples/5-e', x:0, y:0, w:0, h:0},
+  {id: '5.1-e', label: '5.Extra SPAD Type', kind: 'link', navigateTo: 'steps/5-safety-actualisation/examples/5.1-e', x:0, y:0, w:0, h:0},
   { id: 'd16',  label: 'Deliverable D16',     kind: 'info', x: 660, y: 280,   w: 120,  h: 60 },
   { id: 'd7',  label: 'Deliverable D7',     kind: 'info', x: 0, y: 0,   w: 120,  h: 60 },
   { id: 'd10',  label: 'Deliverable D10',     kind: 'info', x: 140, y: 0,   w: 120,  h: 60 },
