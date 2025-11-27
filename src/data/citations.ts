@@ -242,7 +242,7 @@ export const citations: Record<string, CitationEntry> = {
   },
   '55':{
     id:'55',
-    text:'Roboflow railway example, averaging 46\% recall. https://universe.roboflow.com/goal-lmqiu/railway-tfabb'
+    text:'Roboflow railway example, averaging 46% recall. https://universe.roboflow.com/goal-lmqiu/railway-tfabb'
   },
   'Railvision':{
     id:'railvision',

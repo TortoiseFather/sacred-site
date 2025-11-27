@@ -36,13 +36,13 @@ SACRED is a seven-step, ecosystem-aware safety methodology addressing the uncert
     
 2.  **Hazard Identification** – Identifying hazards from both the ego-vehicle (the train) and the ecosystem (infrastructure, environment, external actors).
     
-3.  **Requirements Capture and Assurance** – Validating hazards and formulating requirements by consulting professionals[[8](cite:8)[46](cite:46)], reviewing incident data[[15]](cite:note1), and aligning with regulations[[47](cite:47),[48](cite:48)].
+3.  **Requirements Capture and Assurance** – Validating hazards and formulating requirements by consulting professionals[[8],](cite:8)[[46]](cite:46), reviewing incident data[[15]](cite:note1), and aligning with regulations[[47],](cite:47)[[48]](cite:48).
     
 4.  **Metric Generation** – Determining hazard criticality and translating requirements into measurable, checkable metrics.
     
 5.  **Failure Management** Defining Trigger–Response–Assurance–Process cycles that prescribe how failures are detected, contained, and managed.
     
-6.  **Autonomous System Design Assurance** - Evaluating state-of-the-art technologies against the metrics and procedures, while recognising that every solution (vision, fusion, communication) introduces new dependencies [[49](cite:49),[46](cite:46)].
+6.  **Autonomous System Design Assurance** - Evaluating state-of-the-art technologies against the metrics and procedures, while recognising that every solution (vision, fusion, communication) introduces new dependencies [[49],](cite:49),[[46]](cite:46).
     
 7.  **Safe Operating Context (SOC)**– Producing a dynamic, auditable set of conditions that constrain operation to safe bounds, linking ego performance to ecosystem responsibilities.
     

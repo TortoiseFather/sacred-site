@@ -337,3 +337,13 @@ html, body {
 main {
   flex: 1;
 }
+/* Inline superscript citations */
+.cite-link {
+  font-size: 0.75em;       /* smaller than body text */
+  text-decoration: none;
+  color: var(--accent);
+}
+
+.cite-link:hover {
+  text-decoration: underline;
+}
