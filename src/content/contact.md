@@ -25,9 +25,10 @@ If you are proposing a collaboration or talk, please suggest:
 
 **Telephone number:** +44 7951 190007
 
-
 **GitHub:** <a href="https://github.com/TortoiseFather/">@TortoiseFather</a>
 
 **LinkedIn:** <a href="https://www.linkedin.com/in/josh-hunter-pgr/">@Josh-Hunter-Pgr</a>
 
 **Bluesky:** <a href="https://bsky.app/profile/lovelykohai.bsky.social">@LovelyKohai</a>
+
+**Letterboxd** <a href="https://letterboxd.com/lovelykohai">@Lovelykohai</a>
