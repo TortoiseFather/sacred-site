@@ -277,8 +277,12 @@ export const citations: Record<string, CitationEntry> = {
   text: 'Office of Rail and Road. Rail Safety Statistics Portal. Available at: https://dataportal.orr.gov.uk/statistics/health-and-safety/rail-safety/.'
 },
 '63': {
-  "id": "63",
-  "text": "Sadiq, S., Sadiq, W., & Orlowska, M. (2001). Pockets of Flexibility in Workflow Specification. In ER 2001: Conceptual Modeling (pp. 513–526). Springer.",
+  id: "63",
+  text: "Sadiq, S., Sadiq, W., & Orlowska, M. (2001). Pockets of Flexibility in Workflow Specification. In ER 2001: Conceptual Modeling (pp. 513–526). Springer.",
+},
+'64':{
+  id:'64',
+  text:'https://www.railwaysignallingconcepts.in/headway-calculation-and-signalling-braking-distance-for-railway-signal-placement/'
 }
 
 }
