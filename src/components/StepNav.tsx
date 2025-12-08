@@ -65,8 +65,8 @@ const GROUPS: Record<
     deliverables:['d17','d18','d19']
   },
   '7-soc':{
-    artefacts:['n/a.'],
-    deliverables:['n/a']
+    artefacts:['d7','d13','d16','d17','d19'],
+    deliverables:['d20','d21','d22','d23','d24','d25']
   }
 }
 

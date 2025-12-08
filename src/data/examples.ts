@@ -233,6 +233,41 @@ export const examplesByStep: ExamplesByStep = {
       '6-e':{
         title: 'OpenBVE'
       }
+    },
+    '7-soc':{
+      '7-1':{
+        title: 'SOC Boundary Definition'
+      },
+      '7-2':{
+        title: 'State and Mode Consolidation'
+      },
+      '7-3':{
+        title: 'Assurance Traceability Mapping'
+      },
+      '7-4':{
+        title: 'Residual Risk Exploration'
+      },
+      '7-5':{
+        title: 'Safe Operating Context'
+      },
+      'd20':{
+        title: 'Fallback State Machine'
+      },
+      'd21':{
+        title: 'Verified AS'
+      },
+      'd22':{
+        title: 'Operational Boundary Model'
+      },
+      'd23':{
+        title: 'Safe Operating Context'
+      },
+      'd24':{
+        title: 'Eco/Ego Responsibility'
+      },
+      'd25':{
+        title: 'Whole System Argument'
+      },
     }
 }
 
