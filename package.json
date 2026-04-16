@@ -10,7 +10,7 @@
     "build": "tsc --noEmit -p tsconfig.json && vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist -r https://github.com/TortoiseFather/sacred-site.git"
   },
   "dependencies": {
     "marked": "^16.3.0",
@@ -23,6 +23,7 @@
     "@types/react": "^19.1.13",
     "@types/react-dom": "^19.1.9",
     "@vitejs/plugin-react": "^5.0.3",
+    "baseline-browser-mapping": "^2.10.19",
     "eslint": "^9.35.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
