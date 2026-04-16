@@ -1,0 +1,1 @@
+Domain Knowledge refers to a third party whom assists in the assignment of the ecosystem and ego-vehicle variables. To a less involved degree than [F](ref:f) or [G](ref:g).
