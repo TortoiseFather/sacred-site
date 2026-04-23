@@ -202,7 +202,7 @@ subHotspots: [
  { id: 'd13',  label: 'Deliverable D13',     kind: 'info', x: 0, y: 70,   w: 101,  h: 61 },
  { id: 'd18',  label: 'Deliverable D19',     kind: 'info', x: 70, y: 0,   w: 101,  h: 61 },
  { id: 'd16',  label: 'Deliverable D16',     kind: 'info', x: 140, y: 70,   w: 101,  h: 61 },
- { id: 'd19',  label: 'Deliverable D19',     kind: 'info', x: 220, y: 0,   w: 101,  h: 61 },
+ { id: 'd19',  label: 'Deliverable D19',     kind: 'info',x:510, y:210, w:121, h:61 },
 ],
 implementationMd: `**Do**:\n- Consolidate metric thresholds into operational guardrails.\n- Define activation/transition rules across contexts.\n- Produce operator‑facing artefacts and audit trails.\n\n**Outputs**: SOC pack ready for trials/deployment.`,
 },

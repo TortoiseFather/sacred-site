@@ -164,22 +164,25 @@ export const examplesByStep: ExamplesByStep = {
         title:'Verification or Iteration'
       },
       'd11':{
-        title:'System-Specific Metrics'
+        title:'Requirements Based Metrics'
       },
       'd12':{
-        title:'Route-Specific Metrics'
+        title:'System-Specific Metrics'
       },
       'd13':{
-        title:'Unified Metrics'
+        title:'Route-Specific Metrics'
       },
       'd14':{
-        title:'Criticality Determination'
+        title:'Unified Metrics'
       },
       '4.1-e':{
         title:'Top Level Hazard Analysis.'
       },
       'd15':{
-        title:'HAZOP'
+        title:'Criticality Determination'
+      },
+      'd16':{
+        title:'Scoped SOC'
       },
       '4-e':{
         title:'Milestones'
@@ -195,8 +198,8 @@ export const examplesByStep: ExamplesByStep = {
       '5-3':{
         title:'TRAP Analysis'
       },
-      'd16':{
-        title:'Hazardous Failure Argument'
+      'd17':{
+        title:'TRAP Table'
       },
       '5-e':{
         title:'TRAP Paradigm'
@@ -221,15 +224,6 @@ export const examplesByStep: ExamplesByStep = {
       '6-6': {
       title: 'Restriction or continuation?',
       },
-      'd17': {
-      title: 'AS Development Log',
-      },
-      'd18': {
-      title: 'AS Design Justification',
-      },
-      'd19': {
-      title: 'Limitation Report',
-      },
       '6-e':{
         title: 'OpenBVE'
       }
@@ -244,29 +238,8 @@ export const examplesByStep: ExamplesByStep = {
       '7-3':{
         title: 'Assurance Traceability Mapping'
       },
-      '7-4':{
-        title: 'Residual Risk Exploration'
-      },
-      '7-5':{
-        title: 'Safe Operating Context'
-      },
-      'd20':{
-        title: 'Fallback State Machine'
-      },
-      'd21':{
-        title: 'Verified AS'
-      },
-      'd22':{
-        title: 'Operational Boundary Model'
-      },
-      'd23':{
-        title: 'Safe Operating Context'
-      },
-      'd24':{
-        title: 'Eco/Ego Responsibility'
-      },
-      'd25':{
-        title: 'Whole System Argument'
+      'd19':{
+        title: 'Safe Operating Concept'
       },
     }
 }
