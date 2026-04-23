@@ -347,3 +347,22 @@ main {
 .cite-link:hover {
   text-decoration: underline;
 }
+.supp-list {
+  margin-top: 16px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.supp-list li {
+  margin-bottom: 10px;
+}
+
+.supp-list a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.supp-list a:hover {
+  text-decoration: underline;
+}

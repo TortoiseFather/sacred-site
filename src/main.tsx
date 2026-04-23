@@ -11,6 +11,7 @@ import StepPage from './routes/StepPage'
 import StepExample from './routes/StepExample'
 import CitationProvider from './components/CitationProvider'
 import RefProvider from './components/RefProvider'
+import Supplemental from './routes/Supplemental'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -25,6 +26,7 @@ createRoot(document.getElementById('root')!).render(
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/papers" element={<Papers />} />
+            <Route path="/supplemental" element={<Supplemental />} />
           </Routes>
         </RefProvider>
       </CitationProvider>
