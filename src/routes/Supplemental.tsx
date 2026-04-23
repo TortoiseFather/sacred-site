@@ -27,9 +27,9 @@ export default function Supplemental() {
             </a>
           </li>
           <li>
-            <a>
+            <p>
               Note: Not all participants wished for extensive notes to be taken during interview, furthermore, notes were deleted where interview swayed extensively off topic from the specified conversation, as noted within the ethical approval form.
-            </a>
+            </p>
           </li>
           <li>
             <a href="/files/rssb.pdf" target="_blank" rel="noreferrer">
