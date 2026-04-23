@@ -10,7 +10,7 @@
     "build": "tsc --noEmit -p tsconfig.json && vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist -r https://github.com/TortoiseFather/sacred-site.git"
+    "deploy": "npm run build && cd dist && git add -A && git commit -m \"deploy\" && git push -f origin gh-pages"
   },
   "dependencies": {
     "marked": "^16.3.0",
