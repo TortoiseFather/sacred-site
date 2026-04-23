@@ -224,6 +224,9 @@ export const examplesByStep: ExamplesByStep = {
       '6-6': {
       title: 'Restriction or continuation?',
       },
+      'd18':{
+        title: 'Sota Capability Assessment'
+      },
       '6-e':{
         title: 'OpenBVE'
       }
