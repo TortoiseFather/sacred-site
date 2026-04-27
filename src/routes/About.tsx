@@ -36,6 +36,8 @@ export default function About() {
 
         <p>
           This site is a portfolio, a companion to my thesis, and an attempt to make those ideas a bit more accessible than a 300-page document.<br />
+          For what it's worth, I made this website myself, so I'm quite proud of it. This is my first time actually doing any web design work since getting 40% in my second year undergraduate Web Design class.<br />
+          I suppose you could consider the website part of the overall portfolio.<br />
           If you’ve made it this far, thank you. If you have any questions, feel free to get in touch.
         </p>
       </div>
