@@ -53,20 +53,20 @@ const GROUPS: Record<
     deliverables:['d8','d9','d10']
   },
   '4-metrics':{
-    artefacts:['d6','d8','d10'],
-    deliverables:['d11','d12','d13','d14','d15']
+    artefacts:['d6','d9','d10'],
+    deliverables:['d11','d12','d13','d14','d15','d16']
   },
   '5-safety-actualisation':{
     artefacts:['d7','d10','d15'],
-    deliverables:['d16']
+    deliverables:['d17']
   },
   '6-design-assurance':{
     artefacts:['a','d9','d10','d16'],
-    deliverables:['d17','d18','d19']
+    deliverables:['d18']
   },
   '7-soc':{
-    artefacts:['d7','d13','d16','d17','d19'],
-    deliverables:['d20','d21','d22','d23','d24','d25']
+    artefacts:['d13','d18','d16'],
+    deliverables:['d19']
   }
 }
 

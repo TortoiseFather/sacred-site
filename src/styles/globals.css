@@ -366,3 +366,24 @@ main {
 .supp-list a:hover {
   text-decoration: underline;
 }
+
+.about {
+  max-width: 800px;
+}
+
+/* Photo top-left with text wrapping */
+.about-photo {
+  float: left;
+  width: 220px;              /* adjust size here */
+  height: auto;
+  margin: 0 20px 12px 0;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+/* Clear float after content */
+.about::after {
+  content: "";
+  display: block;
+  clear: both;
+}

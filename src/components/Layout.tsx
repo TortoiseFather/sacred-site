@@ -137,7 +137,7 @@ export default function Layout({
                         color: '#0f172a'
                       }}
                     >
-                      About
+                      About Me
                     </Link>
                   </li>
                   <li>
@@ -165,7 +165,7 @@ export default function Layout({
                         color: '#0f172a'
                       }}
                     >
-                      Contact
+                      Contact Me
                     </Link>
                   </li>
                 </ul>
