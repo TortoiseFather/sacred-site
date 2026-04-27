@@ -188,7 +188,7 @@ export default function Layout({
           <span className="footer-left">
             © {new Date().getFullYear()} All rights reserved
           </span>
-          <span className="footer-center">'The Cafe' 2020–2025</span>
+          <span className="footer-center">'The Cafe' 2020–2026</span>
           <Link className="footer-right" to="/contact">
             Contact me.
           </Link>
