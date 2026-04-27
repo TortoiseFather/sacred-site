@@ -236,10 +236,10 @@ export const examplesByStep: ExamplesByStep = {
         title: 'SOC Boundary Definition'
       },
       '7-2':{
-        title: 'State and Mode Consolidation'
+        title: 'Fallback Behaviour Definition'
       },
       '7-3':{
-        title: 'Assurance Traceability Mapping'
+        title: 'SOC Finalization'
       },
       'd19':{
         title: 'Safe Operating Concept'
