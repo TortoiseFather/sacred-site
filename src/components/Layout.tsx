@@ -156,6 +156,21 @@ export default function Layout({
                   </li>
                   <li>
                     <Link
+                      to="/supplemental"
+                      onClick={() => setMenuOpen(false)}
+                      style={{
+                        display: 'block',
+                        padding: '8px 16px',
+                        textDecoration: 'none',
+                        color: '#0f172a'
+                      }}
+                    >
+                      Supplemental materials
+                    </Link>
+                  </li>
+                  <li></li>
+                  <li>
+                    <Link
                       to="/contact"
                       onClick={() => setMenuOpen(false)}
                       style={{
