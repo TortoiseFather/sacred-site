@@ -44,7 +44,7 @@ SACRED is a seven-step, ecosystem-aware safety methodology addressing the uncert
     
 6.  **Autonomous System Design Assurance** - Evaluating state-of-the-art technologies against the metrics and procedures, while recognising that every solution (vision, fusion, communication) introduces new dependencies [[49],](cite:49),[[46]](cite:46).
     
-7.  **Safe Operating Context (SOC)**– Producing a dynamic, auditable set of conditions that constrain operation to safe bounds, linking ego performance to ecosystem responsibilities.
+7.  **Safe Operating Concept (SOC)**– Producing a dynamic, auditable set of conditions that constrain operation to safe bounds, linking ego performance to ecosystem responsibilities.
     
 
 Put simply, SACRED describes how to get from A to B by first describing A, describing B and then describing everything in-between, exploring the possible risks, mitigation strategies and designing acceptable risk metrics.
