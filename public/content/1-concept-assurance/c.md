@@ -1,4 +1,4 @@
-Artefact C is the initial Safe Operating Context (SOC).
+Artefact C is the initial Safe Operating Concept (SOC).
 
 It is given or derived from Deliverable D2 and describes the context in which current railway systems operate, for example:
 

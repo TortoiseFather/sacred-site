@@ -48,7 +48,7 @@ implementationMd: `**Inputs**: route name, public docs, stakeholder list.\n\n**D
     // Sub-steps (rectangles) → inline detailed info (markdown, with cross-links)
     { id: '1-e', label: '1.Extra - ODMology',         kind: 'link', navigateTo: '/steps/1-concept-assurance/examples/1-e', x: 0, y: 0, w: 0, h: 0 },
     { id: '1.1-e', label: '1.Extra - On Ecosystems',         kind: 'link', navigateTo: '/steps/1-concept-assurance/examples/1.1-e', x: 0, y: 0, w: 0, h: 0 }, 
-    { id: '1.2-e', label: '1.Extra - The Safe Operating Context',         kind: 'link', navigateTo: '/steps/1-concept-assurance/examples/1.2-e', x: 0, y: 0, w: 0, h: 0 }, 
+    { id: '1.2-e', label: '1.Extra - The Safe Operating Concept',         kind: 'link', navigateTo: '/steps/1-concept-assurance/examples/1.2-e', x: 0, y: 0, w: 0, h: 0 }, 
     { id: '1.3-e', label: '1.Extra - The Context of Safe Operation',         kind: 'link', navigateTo: '/steps/1-concept-assurance/examples/1.3-e', x: 0, y: 0, w: 0, h: 0 }, 
     { id: '1-1', label: '1.1 SotA Comparison',         kind: 'link', navigateTo: '/steps/1-concept-assurance/examples/1-1', x: 229, y: 200, w: 111, h: 59 },
     { id: '1-2', label: '1.2 Mission Statement',       kind: 'link', navigateTo: '/steps/1-concept-assurance/examples/1-2', x: 359, y: 200, w: 120, h: 59 },
@@ -143,7 +143,7 @@ subHotspots: [
     { id: '4.1-e', label: '4.Extra - TLHA',         kind: 'link', navigateTo: '/steps/4-metrics/examples/4.1-e', x: 0, y: 0, w: 0, h: 0 },
 
   ],
-implementationMd: `**Do**:\n- Specify Context of Safe Operation (CSO) variables.\n- Compose Safe Operating Contexts (SOC) from CSO thresholds.\n- Determine if all operational requirements can be properly constrained within a series of metrics.\n\n**Outputs**: Metrics catalogue with thresholds & rationale.`,
+implementationMd: `**Do**:\n- Specify Context of Safe Operation (CSO) variables.\n- Compose Safe Operating Concepts (SOC) from CSO thresholds.\n- Determine if all operational requirements can be properly constrained within a series of metrics.\n\n**Outputs**: Metrics catalogue with thresholds & rationale.`,
 },
 {
 number: 5,
@@ -188,9 +188,9 @@ implementationMd: `**Do**:\n- Select sensing/comms/control tech to close gaps.\n
 },
 {
 number: 7,
-title: 'Safe Operating Context',
+title: 'Safe Operating Concept',
 slug: '7-soc',
-summary: 'Synthesize all prior work into a complete Safe Operating Context (SOC).',
+summary: 'Synthesize all prior work into a complete Safe Operating Concept (SOC).',
 diagramSrc: 'diagrams/step-7.svg',
 subHotspots: [
  {id:'7-1', label:'7.1 SOC Boundary Definition', kind: 'link', navigateTo: 'steps/7-soc/examples/7-1', x:60 ,y:210, w:121, h:61},

@@ -41,7 +41,7 @@ export const examplesByStep: ExamplesByStep = {
       title:'The Ecosystem'
     },
     '1.2-e':{
-      title:'The Safe Operating Context'
+      title:'The Safe Operating Concept'
     },
     '1.3-e':{
       title:'The Context of Safe Operation'
