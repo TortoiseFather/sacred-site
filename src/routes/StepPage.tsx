@@ -21,6 +21,7 @@ export default function StepPage() {
 
   const idx = steps.findIndex(s => s.slug === step.slug)
   const next = steps[idx + 1]
+  const prev = steps[idx - 1]
 
   return (
     <Layout>
@@ -46,16 +47,32 @@ export default function StepPage() {
           />
 
           <h2>How to implement</h2>
-          {/* Render implementationMd via the same renderer for consistency */}
+
           <div
             dangerouslySetInnerHTML={{ __html: renderBlock(step.implementationMd) }}
           />
 
+          <div
+            style={{
+              marginTop: 24,
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              gap: 16,
+            }}
+          >
+          {prev && (
+            <p style={{ marginTop: 24 }}>
+              Previous: <Link to={`/steps/${prev.slug}`}>Step {prev.number} – {prev.title}</Link>
+            </p>
+          )}
           {next && (
             <p style={{ marginTop: 24 }}>
               Next: <Link to={`/steps/${next.slug}`}>Step {next.number} – {next.title}</Link>
             </p>
           )}
+          </div>
+          
         </section>
       </div>
     </Layout>

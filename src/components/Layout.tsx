@@ -205,7 +205,7 @@ export default function Layout({
           </span>
           <span className="footer-center">'The Cafe' 2020–2026</span>
           <Link className="footer-right" to="/contact">
-            Contact me.
+            Contact me
           </Link>
         </div>
       </footer>
