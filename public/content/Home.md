@@ -26,11 +26,11 @@ It is a methodology for describing, analysing, and bounding autonomous railway o
 
 Put simply, SACRED is a way of getting from:
 
-> **“We want an autonomous train”**
+> **“We want x railway product.”** (Consider: autonomous route, supplemental assistance system, ect.)
 
 to:
 
-> **“Here is the route, here are the assumptions, here are the hazards, here are the measurable limits, here is what the system must do when those limits are broken, and here is the safe operating concept that follows.”**
+> **“Here is the environment, here are the assumptions, here are the hazards, here are the measurable limits, here is what the system must do when those limits are broken and here is the safe operating concept that follows.”**
 
 SACRED does not try to replace existing railway standards, automation classifications, or assurance frameworks. It sits before them. Its purpose is to produce the operational artefacts that later safety arguments need.
 
