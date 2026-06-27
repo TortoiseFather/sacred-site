@@ -10,13 +10,13 @@
         <mxCell id="21m3U-xvMEw1ZL_-IPLm-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="End Station" vertex="1">
           <mxGeometry height="360" width="40" x="760" y="120" as="geometry" />
         </mxCell>
-        <mxCell id="21m3U-xvMEw1ZL_-IPLm-3" edge="1" parent="1" source="21m3U-xvMEw1ZL_-IPLm-1" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0.125;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+        <mxCell id="21m3U-xvMEw1ZL_-IPLm-3" edge="1" parent="1" source="21m3U-xvMEw1ZL_-IPLm-1" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1.028;exitY=0.111;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
           <mxGeometry height="100" relative="1" width="100" as="geometry">
             <mxPoint x="90" y="160" as="sourcePoint" />
             <mxPoint x="760" y="160" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="21m3U-xvMEw1ZL_-IPLm-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="3,000 meters" vertex="1">
+        <mxCell id="21m3U-xvMEw1ZL_-IPLm-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="9,000 meters" vertex="1">
           <mxGeometry height="30" width="130" x="349" y="130" as="geometry" />
         </mxCell>
         <mxCell id="21m3U-xvMEw1ZL_-IPLm-5" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;" value="">
@@ -25,7 +25,7 @@
             <mxPoint x="500" y="210" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="21m3U-xvMEw1ZL_-IPLm-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="2,000 meters, 0 elevation" vertex="1">
+        <mxCell id="21m3U-xvMEw1ZL_-IPLm-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="6,000 meters, 0 elevation" vertex="1">
           <mxGeometry height="30" width="170" x="210" y="180" as="geometry" />
         </mxCell>
         <mxCell id="21m3U-xvMEw1ZL_-IPLm-7" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;" value="">
@@ -34,7 +34,7 @@
             <mxPoint x="760" y="210" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="21m3U-xvMEw1ZL_-IPLm-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1,000 meters, 165mm elevation" vertex="1">
+        <mxCell id="21m3U-xvMEw1ZL_-IPLm-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="3,000 meters, 165mm cant" vertex="1">
           <mxGeometry height="30" width="170" x="550" y="180" as="geometry" />
         </mxCell>
         <mxCell id="21m3U-xvMEw1ZL_-IPLm-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Bridge" vertex="1">
@@ -43,10 +43,10 @@
         <mxCell id="21m3U-xvMEw1ZL_-IPLm-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Straightaway" vertex="1">
           <mxGeometry height="60" width="590" x="170" y="340" as="geometry" />
         </mxCell>
-        <mxCell id="21m3U-xvMEw1ZL_-IPLm-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="2,800 meters" vertex="1">
+        <mxCell id="21m3U-xvMEw1ZL_-IPLm-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="8,400 meters" vertex="1">
           <mxGeometry height="30" width="90" x="400" y="410" as="geometry" />
         </mxCell>
-        <mxCell id="21m3U-xvMEw1ZL_-IPLm-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="200 meters" vertex="1">
+        <mxCell id="21m3U-xvMEw1ZL_-IPLm-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="600 meters" vertex="1">
           <mxGeometry height="30" width="80" x="85" y="410" as="geometry" />
         </mxCell>
         <mxCell id="21m3U-xvMEw1ZL_-IPLm-23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Water" vertex="1">
@@ -67,22 +67,22 @@
         <mxCell id="21m3U-xvMEw1ZL_-IPLm-28" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Open - Snow" vertex="1">
           <mxGeometry height="60" width="80" x="430" y="250" as="geometry" />
         </mxCell>
-        <mxCell id="21m3U-xvMEw1ZL_-IPLm-29" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="300 meters" vertex="1">
+        <mxCell id="21m3U-xvMEw1ZL_-IPLm-29" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="900 meters" vertex="1">
           <mxGeometry height="30" width="80" x="170" y="310" as="geometry" />
         </mxCell>
-        <mxCell id="21m3U-xvMEw1ZL_-IPLm-30" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="500 meters" vertex="1">
+        <mxCell id="21m3U-xvMEw1ZL_-IPLm-30" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1500 meters" vertex="1">
           <mxGeometry height="30" width="80" x="270" y="310" as="geometry" />
         </mxCell>
-        <mxCell id="21m3U-xvMEw1ZL_-IPLm-31" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="500 meters" vertex="1">
+        <mxCell id="21m3U-xvMEw1ZL_-IPLm-31" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1500 meters" vertex="1">
           <mxGeometry height="30" width="80" x="355" y="310" as="geometry" />
         </mxCell>
-        <mxCell id="21m3U-xvMEw1ZL_-IPLm-32" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="500 meters" vertex="1">
+        <mxCell id="21m3U-xvMEw1ZL_-IPLm-32" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1500 meters" vertex="1">
           <mxGeometry height="30" width="80" x="430" y="310" as="geometry" />
         </mxCell>
-        <mxCell id="21m3U-xvMEw1ZL_-IPLm-33" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="200 meters" vertex="1">
+        <mxCell id="21m3U-xvMEw1ZL_-IPLm-33" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="600 meters" vertex="1">
           <mxGeometry height="30" width="80" x="85" y="310" as="geometry" />
         </mxCell>
-        <mxCell id="21m3U-xvMEw1ZL_-IPLm-34" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1,000 meters" vertex="1">
+        <mxCell id="21m3U-xvMEw1ZL_-IPLm-34" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="3,000 meters" vertex="1">
           <mxGeometry height="30" width="80" x="580" y="310" as="geometry" />
         </mxCell>
         <mxCell id="21m3U-xvMEw1ZL_-IPLm-35" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;span class=&quot;T286Pc&quot; data-sfc-cp=&quot;&quot; data-sfc-root=&quot;ep&quot; data-sfc-cb=&quot;&quot;&gt;120 km/h&lt;/span&gt;&amp;nbsp;limit" vertex="1">
